@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRPNA+ | Sodium-Ion Battery Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F4C81',
+                        accentRed: '#FF0000',
+                        dark: '#1A202C',
+                        light: '#F7FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+            .hero-gradient { background: linear-gradient(135deg, #0F4C81 0%, #165D9E 100%); }
+            .banner-gradient { background: linear-gradient(90deg, #0F4C81, #1861ac); }
+            .logo-font { font-weight: 800; letter-spacing: 0.02em; }
+            .logo-plus { color: #FF0000; position: relative; top: -0.2em; font-size: 0.7em; }
+            .card-hover { transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
+            .card-hover:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(15,76,129,0.15); }
+            .icon-box { transition: 0.3s; }
+            .card-hover:hover .icon-box { transform: scale(1.1); }
+            .nav-scroll { transition: background 0.4s, box-shadow 0.4s; }
+        }
+    </style>
+</head>
+
+<body class="bg-light font-sans text-dark">
+
+<!-- 导航栏 -->
+<nav id="navbar" class="fixed w-full bg-white/95 backdrop-blur-md z-50 nav-scroll">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl logo-font text-primary">SRPNA<span class="logo-plus">+</span></a>
+        <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="font-medium text-primary">Home</a>
+            <a href="technology.html" class="font-medium hover:text-primary">Technology</a>
+            <a href="products.html" class="font-medium hover:text-primary">Products</a>
+            <a href="solutions.html" class="font-medium hover:text-primary">Solutions</a>
+            <a href="contact.html" class="font-medium hover:text-primary">Contact</a>
+        </div>
+        <button class="md:hidden text-xl"><i class="fa fa-bars"></i></button>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero-gradient pt-40 pb-28 text-white">
+    <div class="container mx-auto px-4">
+        <div class="max-w-3xl">
+            <h1 class="text-[clamp(2.5rem,5vw,4rem)] logo-font leading-tight mb-6">
+                Sodium Safe, Reliable Power<br>Nature Forward, A+ Performance
+            </h1>
+            <p class="text-lg opacity-90 mb-8">
+                Pioneering sustainable sodium-ion battery technology for a zero-carbon world.
+            </p>
+            <div class="flex gap-4 flex-wrap">
+                <a href="solutions.html" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100">Explore Solutions</a>
+                <a href="contact.html" class="border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Banner -->
+<section class="banner-gradient py-8 text-white text-center">
+    <div class="container mx-auto px-4">
+        <h2 class="text-lg md:text-xl font-semibold">
+            <i class="fa fa-bolt mr-2"></i> Advanced Sodium-Ion Battery Technology • Safe • High-Efficiency • Long-Life • Eco-Friendly
+        </h2>
+    </div>
+</section>
+
+<!-- Core Values -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4 text-center mb-16">
+        <h2 class="text-3xl logo-font text-primary mb-4">Our Core Values</h2>
+        <p class="text-gray-600 max-w-xl mx-auto">SRPNA<span class="text-accentRed font-bold">+</span> stands for Safety, Reliability, Power, Nature, and A+ Excellence.</p>
+    </div>
+
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div class="card-hover bg-gray-50 p-8 rounded-2xl text-center">
+            <div class="icon-box w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span class="text-3xl logo-font text-primary">S</span>
+            </div>
+            <h3 class="text-xl logo-font mb-2">Sodium & Safe</h3>
+            <p class="text-gray-600">Fire-resistant, explosion-proof, ultra-safe.</p>
+        </div>
+
+        <div class="card-hover bg-gray-50 p-8 rounded-2xl text-center">
+            <div class="icon-box w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span class="text-3xl logo-font text-primary">R</span>
+            </div>
+            <h3 class="text-xl logo-font mb-2">Reliable</h3>
+            <p class="text-gray-600">Stable in extreme temperatures.</p>
+        </div>
+
+        <div class="card-hover bg-gray-50 p-8 rounded-2xl text-center">
+            <div class="icon-box w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span class="text-3xl logo-font text-primary">P</span>
+            </div>
+            <h3 class="text-xl logo-font mb-2">Powerful</h3>
+            <p class="text-gray-600">High energy density & performance.</p>
+        </div>
+
+        <div class="card-hover bg-gray-50 p-8 rounded-2xl text-center">
+            <div class="icon-box w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span class="text-3xl logo-font text-primary">N</span>
+            </div>
+            <h3 class="text-xl logo-font mb-2">Nature</h3>
+            <p class="text-gray-600">Cobalt & nickel-free, eco-friendly.</p>
+        </div>
+
+        <div class="card-hover bg-gray-50 p-8 rounded-2xl text-center">
+            <div class="icon-box w-16 h-16 bg-accentRed/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span class="text-3xl logo-font text-accentRed">A+</span>
+            </div>
+            <h3 class="text-xl logo-font mb-2">Advanced</h3>
+            <p class="text-gray-600">96%+ efficiency, top-tier quality.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Our Advantages -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 text-center mb-16">
+        <h2 class="text-3xl logo-font text-primary mb-4">Our Advantages</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 container mx-auto px-4">
+        <div class="card-hover bg-white p-8 rounded-2xl text-center">
+            <i class="fa fa-leaf text-4xl text-primary mb-6"></i>
+            <h3 class="text-xl logo-font mb-2">Eco-Friendly</h3>
+            <p class="text-gray-600">No cobalt, nickel, pollution-free.</p>
+        </div>
+        <div class="card-hover bg-white p-8 rounded-2xl text-center">
+            <i class="fa fa-shield text-4xl text-primary mb-6"></i>
+            <h3 class="text-xl logo-font mb-2">Ultra Safe</h3>
+            <p class="text-gray-600">Passed multiple safety certifications.</p>
+        </div>
+        <div class="card-hover bg-white p-8 rounded-2xl text-center">
+            <i class="fa fa-tachometer text-4xl text-primary mb-6"></i>
+            <h3 class="text-xl logo-font mb-2">High Efficiency</h3>
+            <p class="text-gray-600">96%+ charge/discharge efficiency.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Data Stats -->
+<section class="py-16 bg-primary text-white">
+    <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+            <div class="text-4xl font-bold mb-2">10,000+</div>
+            <p>Cycle Life</p>
+        </div>
+        <div>
+            <div class="text-4xl font-bold mb-2">96%+</div>
+            <p>Efficiency</p>
+        </div>
+        <div>
+            <div class="text-4xl font-bold mb-2">-40℃</div>
+            <p>Low Temp Start</p>
+        </div>
+        <div>
+            <div class="text-4xl font-bold mb-2">15+</div>
+            <p>Years Life</p>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+            <h2 class="text-3xl logo-font text-primary mb-6">About SRPNA<span class="text-accentRed">+</span></h2>
+            <p class="text-gray-600 mb-4">A global leader in sodium-ion battery technology, delivering safe, reliable, green energy solutions.</p>
+            <a href="technology.html" class="text-primary font-semibold">Learn More <i class="fa fa-arrow-right"></i></a>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-md">
+            <div class="grid grid-cols-2 gap-4 text-center">
+                <div><div class="text-3xl logo-font text-primary">96%+</div><p>Efficiency</p></div>
+                <div><div class="text-3xl logo-font text-primary">10K+</div><p>Cycles</p></div>
+                <div><div class="text-3xl logo-font text-primary">-40℃</div><p>Range</p></div>
+                <div><div class="text-3xl logo-font text-primary">0</div><p>Heavy Metal</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Floating Contact Button -->
+<div class="fixed bottom-8 right-8 z-50">
+    <a href="contact.html" class="bg-primary text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-primary/90">
+        <i class="fa fa-comments text-xl"></i>
+    </a>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl logo-font mb-4">SRPNA<span class="text-accentRed">+</span></h3>
+                <p class="text-gray-400">Powering a sustainable future with advanced sodium-ion battery solutions.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="index.html" class="hover:text-accentRed transition-colors">Home</a></li>
+                    <li><a href="technology.html" class="hover:text-accentRed transition-colors">Technology</a></li>
+                    <li><a href="products.html" class="hover:text-accentRed transition-colors">Products</a></li>
+                    <li><a href="solutions.html" class="hover:text-accentRed transition-colors">Solutions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><i class="fa fa-phone mr-2"></i> +86-13480197460</li>
+                    <li><i class="fa fa-envelope mr-2"></i> info@srpna-batt.com</li>
+                    <li><i class="fa fa-map-marker mr-2"></i> Shenzhen, China</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-weixin"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2026 SRPNA<span class="text-accentRed font-bold">+</span>. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    window.addEventListener('scroll', function(){
+        const nav = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+            nav.classList.add('shadow-md');
+        } else {
+            nav.classList.remove('shadow-md');
+        }
+    });
+</script>
+
+</body>
+</html>

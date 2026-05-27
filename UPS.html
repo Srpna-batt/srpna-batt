@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPS Backup Power | SRPNA+</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F4C81',
+                        accentRed: '#FF0000',
+                        dark: '#1A202C',
+                        light: '#F7FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .logo-font { font-weight: 800; letter-spacing: 0.02em; }
+            .logo-plus { color: #FF0000; position: relative; top: -0.2em; font-size: 0.7em; }
+        }
+    </style>
+</head>
+<body class="bg-light font-sans text-dark">
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl logo-font text-primary">SRPNA<span class="logo-plus">+</span></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium hover:text-primary">Home</a>
+                <a href="technology.html" class="font-medium hover:text-primary">Technology</a>
+                <a href="products.html" class="font-medium hover:text-primary">Products</a>
+                <a href="solutions.html" class="font-medium text-primary">Solutions</a>
+                <a href="contact.html" class="font-medium hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-primary pt-32 pb-16 text-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-[clamp(2rem,4vw,3rem)] logo-font mb-4">UPS Backup Power Solution</h1>
+            <p class="text-lg opacity-90 max-w-2xl">High-rate discharge, ultra-wide temperature, long-life sodium-ion battery for UPS and backup power systems.</p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="grid md:grid-cols-2 gap-10">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Product Features</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• High-rate instantaneous discharge</li>
+                        <li>• Ultra-wide temperature range</li>
+                        <li>• Long service life >15 years</li>
+                        <li>• Safe & stable operation</li>
+                        <li>• Low self-discharge rate</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Applications</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Data center UPS</li>
+                        <li>• Industrial backup power</li>
+                        <li>• Medical equipment power supply</li>
+                        <li>• Emergency power system</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <a href="contact.html" class="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-opacity-90">Contact Us for More Info</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center text-gray-400">
+                <p>&copy; 2026 SRPNA+. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

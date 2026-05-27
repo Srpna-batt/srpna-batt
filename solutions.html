@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions | SRPNA+</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F4C81',
+                        accentRed: '#FF0000',
+                        dark: '#1A202C',
+                        light: '#F7FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .logo-font {
+                font-weight: 800;
+                letter-spacing: 0.02em;
+            }
+            .logo-plus {
+                color: #FF0000;
+                position: relative;
+                top: -0.2em;
+                font-size: 0.7em;
+            }
+            .product-card {
+                transition: all 0.3s ease;
+            }
+            .product-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 10px 25px -5px rgba(15, 76, 129, 0.1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-light font-sans text-dark">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl logo-font text-primary">SRPNA<span class="logo-plus">+</span></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium hover:text-primary transition-colors">Home</a>
+                <a href="technology.html" class="font-medium hover:text-primary transition-colors">Technology</a>
+                <a href="products.html" class="font-medium hover:text-primary transition-colors">Products</a>
+                <a href="solutions.html" class="font-medium text-primary">Solutions</a>
+                <a href="contact.html" class="font-medium hover:text-primary transition-colors">Contact</a>
+            </div>
+            <button class="md:hidden text-dark text-xl"><i class="fa fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="bg-primary pt-32 pb-16 text-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-[clamp(2rem,4vw,3rem)] logo-font mb-4">Energy Solutions</h1>
+            <p class="text-lg opacity-90 max-w-2xl">Custom sodium-ion battery solutions for transportation, energy storage, and backup power applications.</p>
+        </div>
+    </section>
+
+    <!-- Automotive Start-Stop Batteries -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl logo-font text-primary mb-12 text-center">Automotive Start-Stop Batteries</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- H5 -->
+                <div class="product-card bg-light p-8 rounded-xl shadow-sm">
+                    <div class="text-3xl text-primary mb-4"><i class="fa fa-car"></i></div>
+                    <h3 class="text-xl logo-font mb-2">SRPNa-H5</h3>
+                    <p class="text-gray-600 mb-4">12V 418W Start-Stop Battery</p>
+                    <ul class="space-y-1 text-gray-600 mb-6">
+                        <li>CCA (-18°C): 700A</li>
+                        <li>Weight: ≤5.5kg</li>
+                        <li>Wide temp: -40°C~80°C</li>
+                        <li>Low self-discharge</li>
+                    </ul>
+                    <a href="automotive-startstop.html" class="text-primary font-medium hover:text-accentRed transition-colors">
+                        Learn more <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- H6 -->
+                <div class="product-card bg-light p-8 rounded-xl shadow-sm">
+                    <div class="text-3xl text-primary mb-4"><i class="fa fa-car"></i></div>
+                    <h3 class="text-xl logo-font mb-2">SRPNa-H6</h3>
+                    <p class="text-gray-600 mb-4">12V 660W Start-Stop Battery</p>
+                    <ul class="space-y-1 text-gray-600 mb-6">
+                        <li>CCA (-18°C): 800A</li>
+                        <li>Weight: ≤7.5kg</li>
+                        <li>Long cycle life: 8,000+</li>
+                        <li>High rate discharge</li>
+                    </ul>
+                    <a href="automotive-startstop.html" class="text-primary font-medium hover:text-accentRed transition-colors">
+                        Learn more <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- H7 -->
+                <div class="product-card bg-light p-8 rounded-xl shadow-sm">
+                    <div class="text-3xl text-primary mb-4"><i class="fa fa-car"></i></div>
+                    <h3 class="text-xl logo-font mb-2">SRPNa-H7</h3>
+                    <p class="text-gray-600 mb-4">12V 820W Start-Stop Battery</p>
+                    <ul class="space-y-1 text-gray-600 mb-6">
+                        <li>CCA (-18°C): 850A</li>
+                        <li>Weight: ≤9.0kg</li>
+                        <li>Long cycle life: 8,000+</li>
+                        <li>Strong start performance</li>
+                    </ul>
+                    <a href="automotive-startstop.html" class="text-primary font-medium hover:text-accentRed transition-colors">
+                        Learn more <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- H8 -->
+                <div class="product-card bg-light p-8 rounded-xl shadow-sm">
+                    <div class="text-3xl text-primary mb-4"><i class="fa fa-car"></i></div>
+                    <h3 class="text-xl logo-font mb-2">SRPNa-H8</h3>
+                    <p class="text-gray-600 mb-4">12V 880W Start-Stop Battery</p>
+                    <ul class="space-y-1 text-gray-600 mb-6">
+                        <li>CCA (-18°C): 900A</li>
+                        <li>Weight: ≤9.5kg</li>
+                        <li>Extreme cold start</li>
+                        <li>Maintenance-free</li>
+                    </ul>
+                    <a href="automotive-startstop.html" class="text-primary font-medium hover:text-accentRed transition-colors">
+                        Learn more <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- H9 -->
+                <div class="product-card bg-light p-8 rounded-xl shadow-sm">
+                    <div class="text-3xl text-primary mb-4"><i class="fa fa-car"></i></div>
+                    <h3 class="text-xl logo-font mb-2">SRPNa-H9</h3>
+                    <p class="text-gray-600 mb-4">12V 1025W Start-Stop Battery</p>
+                    <ul class="space-y-1 text-gray-600 mb-6">
+                        <li>CCA (-18°C): 1000A</li>
+                        <li>Weight: ≤11.0kg</li>
+                        <li>Top-level cold start</li>
+                        <li>Ultra stable & long life</li>
+                    </ul>
+                    <a href="automotive-startstop.html" class="text-primary font-medium hover:text-accentRed transition-colors">
+                        Learn more <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Heavy-Duty Truck -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl logo-font text-primary mb-12 text-center">Heavy-Duty Truck Batteries</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl logo-font mb-2">SRPNA24160</h3>
+                    <p class="text-gray-600 mb-4">24V Heavy-Duty Truck Battery</p>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li>Reliable cold start at -40°C</li>
+                        <li>Long parking energy supply</li>
+                        <li>High shock resistance</li>
+                    </ul>
+                    <a href="truck.html" class="text-primary font-medium hover:text-accentRed transition-colors">
+                        Learn more <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl logo-font mb-2">SRPNA24320</h3>
+                    <p class="text-gray-600 mb-4">24V High-Capacity Truck Battery</p>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li>Extended cycle life: 10,000+</li>
+                        <li>2x longer service life than lead-acid</li>
+                        <li>Maintenance-free design</li>
+                    </ul>
+                    <a href="truck.html" class="text-primary font-medium hover:text-accentRed transition-colors">
+                        Learn more <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Energy Storage -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl logo-font text-primary mb-12 text-center">Energy Storage & Backup Solutions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-light p-6 rounded-xl shadow-sm">
+                    <div class="text-3xl text-primary mb-4"><i class="fa fa-plug"></i></div>
+                    <h3 class="text-xl logo-font mb-2">UPS Backup Power</h3>
+                    <p class="text-gray-600 mb-6">High-rate discharge for short-term power outage protection, wide temperature range operation.</p>
+                    <a href="UPS.html" class="text-primary font-medium hover:text-accentRed transition-colors">
+                        Learn more <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                <div class="bg-light p-6 rounded-xl shadow-sm">
+                    <div class="text-3xl text-primary mb-4"><i class="fa fa-home"></i></div>
+                    <h3 class="text-xl logo-font mb-2">Household Energy Storage</h3>
+                    <p class="text-gray-600 mb-6">Compact 48V systems for home solar storage, 15-year lifespan, 98%+ efficiency.</p>
+                    <a href="ESS.html" class="text-primary font-medium hover:text-accentRed transition-colors">
+                        Learn more <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                <div class="bg-light p-6 rounded-xl shadow-sm">
+                    <div class="text-3xl text-primary mb-4"><i class="fa fa-building"></i></div>
+                    <h3 class="text-xl logo-font mb-2">Outdoor Integrated Cabinets</h3>
+                    <p class="text-gray-600 mb-6">76.8kWh~200kWh IP54-rated cabinets for C&I storage, liquid cooling, wide temp range.</p>
+                    <a href="ESS.html" class="text-primary font-medium hover:text-accentRed transition-colors">
+                        Learn more <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl logo-font mb-4">SRPNA<span class="text-accentRed">+</span></h3>
+                    <p class="text-gray-400">Powering a sustainable future with advanced sodium-ion battery solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-accentRed transition-colors">Home</a></li>
+                        <li><a href="technology.html" class="hover:text-accentRed transition-colors">Technology</a></li>
+                        <li><a href="products.html" class="hover:text-accentRed transition-colors">Products</a></li>
+                        <li><a href="solutions.html" class="hover:text-accentRed transition-colors">Solutions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fa fa-phone mr-2"></i> +86-13480197460</li>
+                        <li><i class="fa fa-envelope mr-2"></i> info@srpna-batt.com</li>
+                        <li><i class="fa fa-map-marker mr-2"></i> Shenzhen, China</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-weixin"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 SRPNA<span class="text-accentRed font-bold">+</span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

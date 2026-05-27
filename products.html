@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | SRPNA+</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F4C81',
+                        accentRed: '#FF0000',
+                        dark: '#1A202C',
+                        light: '#F7FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter','system-ui','sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .logo-font { font-weight: 800; letter-spacing: 0.02em; }
+            .logo-plus { color: #FF0000; position: relative; top: -0.2em; font-size: 0.7em; }
+            .product-card { transition: all 0.3s ease; }
+            .product-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(15,76,129,0.15); }
+        }
+    </style>
+</head>
+<body class="bg-light font-sans text-dark">
+
+<!-- Navigation -->
+<nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl logo-font text-primary">SRPNA<span class="logo-plus">+</span></a>
+        <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="font-medium hover:text-primary">Home</a>
+            <a href="technology.html" class="font-medium hover:text-primary">Technology</a>
+            <a href="products.html" class="font-medium text-primary">Products</a>
+            <a href="solutions.html" class="font-medium hover:text-primary">Solutions</a>
+            <a href="contact.html" class="font-medium hover:text-primary">Contact</a>
+        </div>
+        <button class="md:hidden text-dark text-xl"><i class="fa fa-bars"></i></button>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="bg-primary pt-32 pb-16 text-white">
+    <div class="container mx-auto px-4">
+        <h1 class="text-[clamp(2rem,4vw,3rem)] logo-font mb-4">Product Portfolio</h1>
+        <p class="text-lg opacity-90 max-w-2xl">High-performance sodium-ion battery cells for diverse industrial and commercial applications.</p>
+    </div>
+</section>
+
+<!-- Cylindrical Cells -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-2xl logo-font text-primary mb-12 text-center">Cylindrical Sodium-Ion Cells</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- 1.2Ah -->
+            <div class="product-card bg-light p-8 rounded-xl shadow-sm">
+                <div class="h-48 bg-white rounded-lg flex items-center justify-center mb-6 overflow-hidden">
+                    <img 
+                        src="https://raw.githubusercontent.com/holtzy/Dataviz/master/png/battery_18650.png" 
+                        alt="NaCR18650-1.2ER" 
+                        class="w-full h-full object-contain p-4">
+                </div>
+                <h3 class="text-xl logo-font mb-2">NaCR18650-1.2ER</h3>
+                <p class="text-gray-600 mb-4">1.2Ah High-Power Cylindrical Cell</p>
+                <ul class="space-y-2 text-gray-600 mb-6">
+                    <li><span class="font-semibold">Energy Density:</span> 95Wh/kg</li>
+                    <li><span class="font-semibold">Max Discharge Rate:</span> 35C</li>
+                    <li><span class="font-semibold">Cycle Life:</span> 3,000+ cycles</li>
+                    <li><span class="font-semibold">Application:</span> Start-stop, power tools</li>
+                </ul>
+                <a href="contact.html" class="text-primary font-semibold hover:text-accentRed">Request Quote <i class="fa fa-arrow-right ml-2"></i></a>
+            </div>
+
+            <!-- 15Ah -->
+            <div class="product-card bg-light p-8 rounded-xl shadow-sm">
+                <div class="h-48 bg-white rounded-lg flex items-center justify-center mb-6 overflow-hidden">
+                    <img 
+                        src="https://raw.githubusercontent.com/holtzy/Dataviz/master/png/battery_4680.png" 
+                        alt="NaCR46145-15ER" 
+                        class="w-full h-full object-contain p-4">
+                </div>
+                <h3 class="text-xl logo-font mb-2">NaCR46145-15ER</h3>
+                <p class="text-gray-600 mb-4">15Ah High-Energy Cylindrical Cell</p>
+                <ul class="space-y-2 text-gray-600 mb-6">
+                    <li><span class="font-semibold">Energy Density:</span> 95Wh/kg</li>
+                    <li><span class="font-semibold">Max Discharge Rate:</span> 15C</li>
+                    <li><span class="font-semibold">Cycle Life:</span> 6,000+ cycles</li>
+                    <li><span class="font-semibold">Application:</span> Heavy-duty, energy storage</li>
+                </ul>
+                <a href="contact.html" class="text-primary font-semibold hover:text-accentRed">Request Quote <i class="fa fa-arrow-right ml-2"></i></a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Prismatic Cells -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-2xl logo-font text-primary mb-12 text-center">Prismatic Sodium-Ion Cells</h2>
+        <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-sm">
+            <div class="h-56 bg-white rounded-lg flex items-center justify-center mb-6 overflow-hidden">
+                <img 
+                    src="https://raw.githubusercontent.com/holtzy/Dataviz/master/png/battery_prismatic.png" 
+                    alt="NaCP71173208-160E3" 
+                    class="w-full h-full object-contain p-4">
+            </div>
+            <h3 class="text-xl logo-font mb-2">NaCP71173208-160E3</h3>
+            <p class="text-gray-600 mb-4">160Ah Long-Cycle Prismatic Cell</p>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+                <div class="text-gray-600"><span class="font-semibold">Energy Density:</span> 110Wh/kg</div>
+                <div class="text-gray-600"><span class="font-semibold">Max Discharge Rate:</span> 4C</div>
+                <div class="text-gray-600"><span class="font-semibold">Cycle Life:</span> 10,000+ cycles</div>
+                <div class="text-gray-600"><span class="font-semibold">Voltage Range:</span> 1.5~3.45V</div>
+            </div>
+            <p class="text-gray-600 mb-6"><span class="font-semibold">Application:</span> Energy storage, forklifts, residential systems</p>
+            <a href="contact.html" class="text-primary font-semibold hover:text-accentRed">Request Quote <i class="fa fa-arrow-right ml-1"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl logo-font mb-4">SRPNA<span class="text-accentRed">+</span></h3>
+                <p class="text-gray-400">Powering a sustainable future with advanced sodium-ion battery solutions.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="index.html" class="hover:text-accentRed">Home</a></li>
+                    <li><a href="technology.html" class="hover:text-accentRed">Technology</a></li>
+                    <li><a href="products.html" class="hover:text-accentRed">Products</a></li>
+                    <li><a href="solutions.html" class="hover:text-accentRed">Solutions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><i class="fa fa-phone mr-2"></i> +86-13480197460</li>
+                    <li><i class="fa fa-envelope mr-2"></i> info@srpna-batt.com</li>
+                    <li><i class="fa fa-map-marker mr-2"></i> Shenzhen, China</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary"><i class="fa fa-weixin"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2026 SRPNA<span class="text-accentRed font-bold">+</span>. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
