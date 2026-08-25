@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SRPNA+ | Sodium-Ion Battery Solutions</title>
+    <title>SRPNA+ | Sodium-Ion Battery Manufacturer & Factory</title>
+    <meta name="description" content="SRPNA+ is a leading sodium-ion battery manufacturer with 20,000㎡ automated factory, 1GWh annual capacity. Cylindrical & prismatic cells for automotive, ESS, and industrial applications.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script>
@@ -14,6 +15,8 @@
                         primary: '#0F4C81',
                         accentRed: '#FF0000',
                         dark: '#1A202C',
+                        industrial: '#2D3748',
+                        metal: '#A0AEC0',
                         light: '#F7FAFC'
                     },
                     fontFamily: {
@@ -25,187 +28,245 @@
     </script>
     <style type="text/tailwindcss">
         @layer utilities {
-            .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-            .hero-gradient { background: linear-gradient(135deg, #0F4C81 0%, #165D9E 100%); }
-            .banner-gradient { background: linear-gradient(90deg, #0F4C81, #1861ac); }
             .logo-font { font-weight: 800; letter-spacing: 0.02em; }
             .logo-plus { color: #FF0000; position: relative; top: -0.2em; font-size: 0.7em; }
-            .card-hover { transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
-            .card-hover:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(15,76,129,0.15); }
-            .icon-box { transition: 0.3s; }
-            .card-hover:hover .icon-box { transform: scale(1.1); }
-            .nav-scroll { transition: background 0.4s, box-shadow 0.4s; }
+            .card-hover { transition: all 0.3s ease; }
+            .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+            /* 视频上文字阴影，保证无遮罩时清晰可读 */
+            .hero-text-shadow {
+                text-shadow: 0 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5);
+            }
+            .hero-sub-shadow {
+                text-shadow: 0 1px 6px rgba(0,0,0,0.9), 0 0 12px rgba(0,0,0,0.6);
+            }
         }
     </style>
 </head>
-
 <body class="bg-light font-sans text-dark">
 
-<!-- 导航栏 -->
-<nav id="navbar" class="fixed w-full bg-white/95 backdrop-blur-md z-50 nav-scroll">
+<!-- ==================== Navigation ==================== -->
+<nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 shadow-md">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
         <a href="index.html" class="text-2xl logo-font text-primary">SRPNA<span class="logo-plus">+</span></a>
         <div class="hidden md:flex space-x-8">
             <a href="index.html" class="font-medium text-primary">Home</a>
-            <a href="technology.html" class="font-medium hover:text-primary">Technology</a>
-            <a href="products.html" class="font-medium hover:text-primary">Products</a>
-            <a href="solutions.html" class="font-medium hover:text-primary">Solutions</a>
-            <a href="contact.html" class="font-medium hover:text-primary">Contact</a>
+            <a href="technology.html" class="font-medium hover:text-primary transition-colors">Technology</a>
+            <a href="products.html" class="font-medium hover:text-primary transition-colors">Products</a>
+            <a href="solutions.html" class="font-medium hover:text-primary transition-colors">Solutions</a>
+            <a href="contact.html" class="font-medium hover:text-primary transition-colors">Contact</a>
         </div>
         <button class="md:hidden text-xl"><i class="fa fa-bars"></i></button>
     </div>
 </nav>
 
-<!-- Hero -->
-<section class="hero-gradient pt-40 pb-28 text-white">
-    <div class="container mx-auto px-4">
-        <div class="max-w-3xl">
-            <h1 class="text-[clamp(2.5rem,5vw,4rem)] logo-font leading-tight mb-6">
-                Sodium Safe, Reliable Power<br>Nature Forward, A+ Performance
-            </h1>
-            <p class="text-lg opacity-90 mb-8">
-                Pioneering sustainable sodium-ion battery technology for a zero-carbon world.
-            </p>
-            <div class="flex gap-4 flex-wrap">
-                <a href="solutions.html" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100">Explore Solutions</a>
-                <a href="contact.html" class="border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10">Get In Touch</a>
-            </div>
+<!-- ==================== Hero: Factory Tour Video（无遮罩版） ==================== -->
+<section class="relative w-full h-[520px] md:h-[640px] flex items-center overflow-hidden">
+    <!-- 工厂视频背景（无遮罩，全屏展示） -->
+    <video 
+        src="factory-tour.mp4" 
+        autoplay 
+        muted 
+        loop 
+        playsinline
+        preload="auto"
+        class="absolute w-full h-full object-cover"
+    ></video>
+    <!-- 底部渐变过渡（只保留底部一小段，衔接下方深色数据条） -->
+    <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-dark/80 to-transparent"></div>
+    
+    <div class="container relative mx-auto px-4 text-white">
+        <!-- 工厂标签 -->
+        <div class="inline-block bg-accentRed px-3 py-1 text-xs font-bold tracking-widest mb-4 shadow-lg">
+            <i class="fa fa-industry mr-1"></i> MANUFACTURER · FACTORY DIRECT
+        </div>
+        <!-- 主标题（加文字阴影） -->
+        <h1 class="text-[clamp(2.2rem,5vw,4rem)] logo-font leading-tight mb-4 hero-text-shadow">
+            Sodium-Ion Battery<br>
+            <span class="text-accentRed">Manufacturing</span> Excellence
+        </h1>
+        <!-- 副标题（加文字阴影） -->
+        <p class="text-lg md:text-xl opacity-95 max-w-2xl mb-8 hero-sub-shadow">
+            20,000㎡ automated factory · 1GWh annual capacity · 
+            From raw material to finished cell, fully in-house production.
+        </p>
+        <div class="flex flex-wrap gap-4">
+            <a href="technology.html" class="bg-accentRed text-white px-8 py-3 rounded font-bold hover:bg-red-700 transition-colors shadow-lg">
+                <i class="fa fa-play-circle mr-2"></i> Watch Factory Tour
+            </a>
+            <a href="contact.html" class="border-2 border-white text-white px-8 py-3 rounded font-bold hover:bg-white hover:text-primary transition-colors shadow-lg backdrop-blur-sm">
+                Get a Quote
+            </a>
         </div>
     </div>
 </section>
 
-<!-- Banner -->
-<section class="banner-gradient py-8 text-white text-center">
-    <div class="container mx-auto px-4">
-        <h2 class="text-lg md:text-xl font-semibold">
-            <i class="fa fa-bolt mr-2"></i> Advanced Sodium-Ion Battery Technology • Safe • High-Efficiency • Long-Life • Eco-Friendly
-        </h2>
+<!-- ==================== Factory Data Bar ==================== -->
+<section class="bg-dark text-white py-6 border-t-4 border-accentRed">
+    <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div>
+            <div class="text-2xl md:text-3xl font-bold text-accentRed">20,000㎡</div>
+            <div class="text-xs text-gray-400 tracking-wider mt-1">FACTORY AREA</div>
+        </div>
+        <div>
+            <div class="text-2xl md:text-3xl font-bold text-accentRed">1GWh</div>
+            <div class="text-xs text-gray-400 tracking-wider mt-1">ANNUAL CAPACITY</div>
+        </div>
+        <div>
+            <div class="text-2xl md:text-3xl font-bold text-accentRed">6</div>
+            <div class="text-xs text-gray-400 tracking-wider mt-1">AUTOMATED LINES</div>
+        </div>
+        <div>
+            <div class="text-2xl md:text-3xl font-bold text-accentRed">100%</div>
+            <div class="text-xs text-gray-400 tracking-wider mt-1">IN-HOUSE PRODUCTION</div>
+        </div>
     </div>
 </section>
 
-<!-- Core Values -->
+<!-- ==================== Core Values ==================== -->
 <section class="py-20 bg-white">
-    <div class="container mx-auto px-4 text-center mb-16">
-        <h2 class="text-3xl logo-font text-primary mb-4">Our Core Values</h2>
-        <p class="text-gray-600 max-w-xl mx-auto">SRPNA<span class="text-accentRed font-bold">+</span> stands for Safety, Reliability, Power, Nature, and A+ Excellence.</p>
-    </div>
-
-    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-        <div class="card-hover bg-gray-50 p-8 rounded-2xl text-center">
-            <div class="icon-box w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span class="text-3xl logo-font text-primary">S</span>
-            </div>
-            <h3 class="text-xl logo-font mb-2">Sodium & Safe</h3>
-            <p class="text-gray-600">Fire-resistant, explosion-proof, ultra-safe.</p>
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl logo-font text-primary">Our Core Values</h2>
+            <p class="text-gray-600 mt-3">SRPNA<span class="text-accentRed font-bold">+</span> stands for Safety, Reliability, Power, Nature, and A+ Excellence.</p>
         </div>
-
-        <div class="card-hover bg-gray-50 p-8 rounded-2xl text-center">
-            <div class="icon-box w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span class="text-3xl logo-font text-primary">R</span>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+            <div class="bg-gray-50 p-6 rounded-xl text-center card-hover border border-gray-200">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl font-bold text-primary">S</span>
+                </div>
+                <h3 class="font-bold text-primary mb-2">Sodium & Safe</h3>
+                <p class="text-sm text-gray-600">Fire-resistant, explosion-proof, ultra-safe.</p>
             </div>
-            <h3 class="text-xl logo-font mb-2">Reliable</h3>
-            <p class="text-gray-600">Stable in extreme temperatures.</p>
-        </div>
-
-        <div class="card-hover bg-gray-50 p-8 rounded-2xl text-center">
-            <div class="icon-box w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span class="text-3xl logo-font text-primary">P</span>
+            <div class="bg-gray-50 p-6 rounded-xl text-center card-hover border border-gray-200">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl font-bold text-primary">R</span>
+                </div>
+                <h3 class="font-bold text-primary mb-2">Reliable</h3>
+                <p class="text-sm text-gray-600">Stable in extreme temperatures.</p>
             </div>
-            <h3 class="text-xl logo-font mb-2">Powerful</h3>
-            <p class="text-gray-600">High energy density & performance.</p>
-        </div>
-
-        <div class="card-hover bg-gray-50 p-8 rounded-2xl text-center">
-            <div class="icon-box w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span class="text-3xl logo-font text-primary">N</span>
+            <div class="bg-gray-50 p-6 rounded-xl text-center card-hover border border-gray-200">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl font-bold text-primary">P</span>
+                </div>
+                <h3 class="font-bold text-primary mb-2">Powerful</h3>
+                <p class="text-sm text-gray-600">High energy density & performance.</p>
             </div>
-            <h3 class="text-xl logo-font mb-2">Nature</h3>
-            <p class="text-gray-600">Cobalt & nickel-free, eco-friendly.</p>
-        </div>
-
-        <div class="card-hover bg-gray-50 p-8 rounded-2xl text-center">
-            <div class="icon-box w-16 h-16 bg-accentRed/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span class="text-3xl logo-font text-accentRed">A+</span>
+            <div class="bg-gray-50 p-6 rounded-xl text-center card-hover border border-gray-200">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl font-bold text-primary">N</span>
+                </div>
+                <h3 class="font-bold text-primary mb-2">Nature</h3>
+                <p class="text-sm text-gray-600">Cobalt & nickel-free, eco-friendly.</p>
             </div>
-            <h3 class="text-xl logo-font mb-2">Advanced</h3>
-            <p class="text-gray-600">96%+ efficiency, top-tier quality.</p>
+            <div class="bg-gray-50 p-6 rounded-xl text-center card-hover border border-gray-200">
+                <div class="w-16 h-16 bg-accentRed/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl font-bold text-accentRed">A+</span>
+                </div>
+                <h3 class="font-bold text-primary mb-2">Advanced</h3>
+                <p class="text-sm text-gray-600">96%+ efficiency, top-tier quality.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Our Advantages -->
+<!-- ==================== Our Advantages ==================== -->
 <section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-4 text-center mb-16">
-        <h2 class="text-3xl logo-font text-primary mb-4">Our Advantages</h2>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 container mx-auto px-4">
-        <div class="card-hover bg-white p-8 rounded-2xl text-center">
-            <i class="fa fa-leaf text-4xl text-primary mb-6"></i>
-            <h3 class="text-xl logo-font mb-2">Eco-Friendly</h3>
-            <p class="text-gray-600">No cobalt, nickel, pollution-free.</p>
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl logo-font text-primary">Our Advantages</h2>
         </div>
-        <div class="card-hover bg-white p-8 rounded-2xl text-center">
-            <i class="fa fa-shield text-4xl text-primary mb-6"></i>
-            <h3 class="text-xl logo-font mb-2">Ultra Safe</h3>
-            <p class="text-gray-600">Passed multiple safety certifications.</p>
-        </div>
-        <div class="card-hover bg-white p-8 rounded-2xl text-center">
-            <i class="fa fa-tachometer text-4xl text-primary mb-6"></i>
-            <h3 class="text-xl logo-font mb-2">High Efficiency</h3>
-            <p class="text-gray-600">96%+ charge/discharge efficiency.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Data Stats -->
-<section class="py-16 bg-primary text-white">
-    <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div>
-            <div class="text-4xl font-bold mb-2">10,000+</div>
-            <p>Cycle Life</p>
-        </div>
-        <div>
-            <div class="text-4xl font-bold mb-2">96%+</div>
-            <p>Efficiency</p>
-        </div>
-        <div>
-            <div class="text-4xl font-bold mb-2">-40℃</div>
-            <p>Low Temp Start</p>
-        </div>
-        <div>
-            <div class="text-4xl font-bold mb-2">15+</div>
-            <p>Years Life</p>
-        </div>
-    </div>
-</section>
-
-<!-- About -->
-<section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-            <h2 class="text-3xl logo-font text-primary mb-6">About SRPNA<span class="text-accentRed">+</span></h2>
-            <p class="text-gray-600 mb-4">A global leader in sodium-ion battery technology, delivering safe, reliable, green energy solutions.</p>
-            <a href="technology.html" class="text-primary font-semibold">Learn More <i class="fa fa-arrow-right"></i></a>
-        </div>
-        <div class="bg-white p-8 rounded-2xl shadow-md">
-            <div class="grid grid-cols-2 gap-4 text-center">
-                <div><div class="text-3xl logo-font text-primary">96%+</div><p>Efficiency</p></div>
-                <div><div class="text-3xl logo-font text-primary">10K+</div><p>Cycles</p></div>
-                <div><div class="text-3xl logo-font text-primary">-40℃</div><p>Range</p></div>
-                <div><div class="text-3xl logo-font text-primary">0</div><p>Heavy Metal</p></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl text-center card-hover border border-gray-200 shadow-sm">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fa fa-leaf text-2xl text-primary"></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-2">Eco-Friendly</h3>
+                <p class="text-gray-600">No cobalt, nickel, pollution-free.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl text-center card-hover border border-gray-200 shadow-sm">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fa fa-shield text-2xl text-primary"></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-2">Ultra Safe</h3>
+                <p class="text-gray-600">Passed multiple safety certifications.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl text-center card-hover border border-gray-200 shadow-sm">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fa fa-tachometer text-2xl text-primary"></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-2">High Efficiency</h3>
+                <p class="text-gray-600">96%+ charge/discharge efficiency.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Floating Contact Button -->
-<div class="fixed bottom-8 right-8 z-50">
-    <a href="contact.html" class="bg-primary text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-primary/90">
-        <i class="fa fa-comments text-xl"></i>
-    </a>
-</div>
+<!-- ==================== Key Metrics Bar ==================== -->
+<section class="bg-primary text-white py-12">
+    <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div>
+            <div class="text-4xl font-bold">10,000+</div>
+            <div class="text-sm opacity-80 mt-2">Cycle Life</div>
+        </div>
+        <div>
+            <div class="text-4xl font-bold">96%+</div>
+            <div class="text-sm opacity-80 mt-2">Efficiency</div>
+        </div>
+        <div>
+            <div class="text-4xl font-bold">-40°C</div>
+            <div class="text-sm opacity-80 mt-2">Low Temp Start</div>
+        </div>
+        <div>
+            <div class="text-4xl font-bold">15+</div>
+            <div class="text-sm opacity-80 mt-2">Years Life</div>
+        </div>
+    </div>
+</section>
 
-<!-- Footer -->
+<!-- ==================== About SRPNA+ ==================== -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl logo-font text-primary mb-4">About SRPNA<span class="text-accentRed">+</span></h2>
+                <p class="text-gray-600 mb-4">
+                    A global leader in sodium-ion battery technology, delivering safe, reliable, 
+                    green energy solutions for automotive, energy storage, and industrial applications.
+                </p>
+                <p class="text-gray-600 mb-6">
+                    With our own 20,000㎡ manufacturing facility and fully automated production lines, 
+                    we control every step from raw material to finished product — ensuring consistent quality, 
+                    competitive pricing, and reliable delivery for our customers worldwide.
+                </p>
+                <a href="technology.html" class="text-primary font-semibold hover:text-accentRed transition-colors">
+                    Learn More <i class="fa fa-arrow-right ml-1"></i>
+                </a>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-200">
+                <div class="grid grid-cols-2 gap-6 text-center">
+                    <div>
+                        <div class="text-3xl font-bold text-primary">96%+</div>
+                        <div class="text-sm text-gray-500 mt-1">Efficiency</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-primary">10K+</div>
+                        <div class="text-sm text-gray-500 mt-1">Cycles</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-primary">-40°C</div>
+                        <div class="text-sm text-gray-500 mt-1">Range</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-primary">0</div>
+                        <div class="text-sm text-gray-500 mt-1">Heavy Metal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== Footer ==================== -->
 <footer class="bg-dark text-white py-12">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -244,17 +305,6 @@
         </div>
     </div>
 </footer>
-
-<script>
-    window.addEventListener('scroll', function(){
-        const nav = document.getElementById('navbar');
-        if (window.scrollY > 50) {
-            nav.classList.add('shadow-md');
-        } else {
-            nav.classList.remove('shadow-md');
-        }
-    });
-</script>
 
 </body>
 </html>
