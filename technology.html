@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technology | SRPNA+</title>
+    <title>Technology | SRPNA+ Sodium-Ion Battery Core Technology</title>
+    <meta name="description" content="SRPNA+ advanced sodium-ion battery technology: polyanion material system, -40°C extreme temperature performance, 96%+ efficiency, 10,000+ cycles, TUV/UL/IEC certified.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script>
@@ -14,6 +15,8 @@
                         primary: '#0F4C81',
                         accentRed: '#FF0000',
                         dark: '#1A202C',
+                        industrial: '#2D3748',
+                        metal: '#A0AEC0',
                         light: '#F7FAFC'
                     },
                     fontFamily: {
@@ -25,158 +28,321 @@
     </script>
     <style type="text/tailwindcss">
         @layer utilities {
-            .text-shadow {
-                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            .logo-font { font-weight: 800; letter-spacing: 0.02em; }
+            .logo-plus { color: #FF0000; position: relative; top: -0.2em; font-size: 0.7em; }
+            .card-hover { transition: all 0.3s ease; }
+            .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+            .industrial-border { border-left: 4px solid #FF0000; }
+            .hero-text-shadow {
+                text-shadow: 0 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5);
             }
-            .logo-font {
-                font-weight: 800;
-                letter-spacing: 0.02em;
-            }
-            .logo-plus {
-                color: #FF0000;
-                position: relative;
-                top: -0.2em;
-                font-size: 0.7em;
+            .hero-sub-shadow {
+                text-shadow: 0 1px 6px rgba(0,0,0,0.9), 0 0 12px rgba(0,0,0,0.6);
             }
         }
     </style>
 </head>
 <body class="bg-light font-sans text-dark">
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl logo-font text-primary">SRPNA<span class="logo-plus">+</span></a>
-            <div class="hidden md:flex space-x-8">
-                <a href="index.html" class="font-medium hover:text-primary transition-colors">Home</a>
-                <a href="technology.html" class="font-medium text-primary">Technology</a>
-                <a href="products.html" class="font-medium hover:text-primary transition-colors">Products</a>
-                <a href="solutions.html" class="font-medium hover:text-primary transition-colors">Solutions</a>
-                <a href="contact.html" class="font-medium hover:text-primary transition-colors">Contact</a>
+
+<!-- ==================== Navigation ==================== -->
+<nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl logo-font text-primary">SRPNA<span class="logo-plus">+</span></a>
+        <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="font-medium hover:text-primary transition-colors">Home</a>
+            <a href="technology.html" class="font-medium text-primary">Technology</a>
+            <a href="products.html" class="font-medium hover:text-primary transition-colors">Products</a>
+            <a href="solutions.html" class="font-medium hover:text-primary transition-colors">Solutions</a>
+            <a href="contact.html" class="font-medium hover:text-primary transition-colors">Contact</a>
+        </div>
+        <button class="md:hidden text-xl"><i class="fa fa-bars"></i></button>
+    </div>
+</nav>
+
+<!-- ==================== Hero: Factory Video Background ==================== -->
+<section class="relative w-full h-[420px] md:h-[520px] flex items-center overflow-hidden">
+    <!-- 工厂视频背景 -->
+    <video 
+        src="factory-tour.mp4" 
+        autoplay 
+        muted 
+        loop 
+        playsinline
+        preload="auto"
+        class="absolute w-full h-full object-cover"
+    ></video>
+    <!-- 底部渐变过渡 -->
+    <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-dark/80 to-transparent"></div>
+    
+    <div class="container relative mx-auto px-4 text-white">
+        <div class="inline-block bg-accentRed px-3 py-1 text-xs font-bold tracking-widest mb-4 shadow-lg">
+            <i class="fa fa-microchip mr-1"></i> CORE TECHNOLOGY · 核心技术
+        </div>
+        <h1 class="text-[clamp(2rem,4vw,3.5rem)] logo-font leading-tight mb-4 hero-text-shadow">
+            Advanced Sodium-Ion<br>
+            <span class="text-accentRed">Battery Technology</span>
+        </h1>
+        <p class="text-lg md:text-xl opacity-95 max-w-2xl hero-sub-shadow">
+            Cutting-edge sodium-ion battery technology built on polyanion materials, 
+            delivering safety, efficiency, and longevity.
+        </p>
+    </div>
+</section>
+
+<!-- ==================== Tech Data Bar ==================== -->
+<section class="bg-dark text-white py-6 border-t-4 border-accentRed">
+    <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div>
+            <div class="text-2xl md:text-3xl font-bold text-accentRed">-40°C</div>
+            <div class="text-xs text-gray-400 tracking-wider mt-1">LOW TEMP START</div>
+        </div>
+        <div>
+            <div class="text-2xl md:text-3xl font-bold text-accentRed">96%+</div>
+            <div class="text-xs text-gray-400 tracking-wider mt-1">EFFICIENCY</div>
+        </div>
+        <div>
+            <div class="text-2xl md:text-3xl font-bold text-accentRed">10,000+</div>
+            <div class="text-xs text-gray-400 tracking-wider mt-1">CYCLE LIFE</div>
+        </div>
+        <div>
+            <div class="text-2xl md:text-3xl font-bold text-accentRed">0</div>
+            <div class="text-xs text-gray-400 tracking-wider mt-1">COBALT / NICKEL</div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== Polyanion Material System ==================== -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- 左侧：文字内容 -->
+            <div>
+                                <h2 class="text-3xl logo-font text-primary mb-6">Polyanion Material System</h2>
+                <p class="text-gray-600 mb-6">
+                    Our proprietary polyanion cathode material ensures structural stability, 
+                    high safety, and excellent cycling performance — the core of our sodium-ion 
+                    battery excellence.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fa fa-fire text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary">High Thermal Stability</h4>
+                            <p class="text-sm text-gray-600">Resistant to thermal runaway, safe at extreme temperatures.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fa fa-cubes text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary">Superior Structural Integrity</h4>
+                            <p class="text-sm text-gray-600">Stable crystal structure prevents degradation over cycles.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fa fa-bolt text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary">Enhanced Ion Conductivity</h4>
+                            <p class="text-sm text-gray-600">Fast sodium-ion transport enables high-rate discharge.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <button class="md:hidden text-dark text-xl"><i class="fa fa-bars"></i></button>
-        </div>
-    </nav>
-
-    <!-- Hero -->
-    <section class="bg-primary pt-32 pb-16 text-white">
-        <div class="container mx-auto px-4">
-            <h1 class="text-[clamp(2rem,4vw,3rem)] logo-font mb-4">Core Technology</h1>
-            <p class="text-lg opacity-90 max-w-2xl">Cutting-edge sodium-ion battery technology built on polyanion materials, delivering safety, efficiency, and longevity.</p>
-        </div>
-    </section>
-
-    <!-- Tech Features -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
-                <div>
-                    <h2 class="text-2xl logo-font text-primary mb-4">Polyanion Material System</h2>
-                    <p class="text-gray-600 mb-4">
-                        Our proprietary polyanion cathode material ensures structural stability, high safety, and excellent cycling performance — the core of our sodium-ion battery excellence.
-                    </p>
-                    <ul class="space-y-2 text-gray-600">
-                        <li><i class="fa fa-check text-primary mr-2"></i> High thermal stability</li>
-                        <li><i class="fa fa-check text-primary mr-2"></i> Superior structural integrity</li>
-                        <li><i class="fa fa-check text-primary mr-2"></i> Enhanced ion conductivity</li>
-                    </ul>
-                </div>
-                <div class="bg-gray-100 p-8 rounded-xl">
-                    <div class="h-64 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <span class="text-5xl text-primary/50"><i class="fa fa-flask"></i></span>
+            <!-- 右侧：技术视频展示（替换原烧瓶图标） -->
+            <div class="bg-gray-100 p-6 rounded-xl overflow-hidden shadow-lg border border-gray-200">
+                <div class="relative">
+                    <div class="absolute top-3 left-3 z-10 bg-accentRed/90 text-white text-xs font-bold px-3 py-1 rounded tracking-wider">
+                        <i class="fa fa-play-circle mr-1"></i> TECH DEMO
                     </div>
+                    <video 
+                        src="tech-video.mp4" 
+                        controls 
+                        preload="metadata"
+                        loading="lazy"
+                        class="w-full h-auto rounded-lg bg-black"
+                    >
+                        Your browser does not support video playback.
+                    </video>
+                </div>
+                <p class="text-gray-500 text-sm mt-3 text-center">
+                    Polyanion cathode material &amp; cell manufacturing process
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== Key Performance Metrics ==================== -->
+<section class="py-20 bg-gray-50 border-y border-gray-300">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+                        <h2 class="text-3xl logo-font text-primary">Key Performance Metrics</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- 极端温度 -->
+            <div class="bg-white p-8 rounded-xl text-center card-hover industrial-border shadow-sm">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fa fa-thermometer-empty text-3xl text-primary"></i>
+                </div>
+                <div class="text-4xl font-bold text-primary mb-2">-40°C~80°C</div>
+                <h3 class="font-bold text-dark mb-2">Extreme Temperature Performance</h3>
+                <p class="text-sm text-gray-600">Stable discharge from -40°C to 80°C, suitable for harsh environments.</p>
+            </div>
+            <!-- 高效率 -->
+            <div class="bg-white p-8 rounded-xl text-center card-hover industrial-border shadow-sm">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fa fa-tachometer text-3xl text-primary"></i>
+                </div>
+                <div class="text-4xl font-bold text-primary mb-2">96%+</div>
+                <h3 class="font-bold text-dark mb-2">Ultra-High Efficiency</h3>
+                <p class="text-sm text-gray-600">Ultra-high charge/discharge efficiency minimizes energy loss.</p>
+            </div>
+            <!-- 长循环 -->
+            <div class="bg-white p-8 rounded-xl text-center card-hover industrial-border shadow-sm">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fa fa-refresh text-3xl text-primary"></i>
+                </div>
+                <div class="text-4xl font-bold text-primary mb-2">10,000+</div>
+                <h3 class="font-bold text-dark mb-2">Long Cycle Life</h3>
+                <p class="text-sm text-gray-600">Long cycle life with 15+ years of service durability.</p>
+            </div>
+            <!-- 安全认证 -->
+            <div class="bg-white p-8 rounded-xl text-center card-hover industrial-border shadow-sm">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fa fa-shield text-3xl text-primary"></i>
+                </div>
+                <div class="text-4xl font-bold text-primary mb-2">TUV/UL/IEC</div>
+                <h3 class="font-bold text-dark mb-2">Full Safety Certifications</h3>
+                <p class="text-sm text-gray-600">TUV SUD, UL, IEC certified for global safety standards.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== Quality & Safety Assurance ==================== -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+                      <h2 class="text-3xl logo-font text-primary">Quality & Safety Assurance</h2>
+            <p class="text-gray-600 mt-3 max-w-2xl mx-auto">
+                Rigorous testing and global certifications ensure every battery meets 
+                the highest quality and safety standards.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Strict Testing -->
+            <div class="bg-gray-50 p-8 rounded-xl card-hover border border-gray-200">
+                <div class="w-16 h-16 bg-accentRed/10 rounded-full flex items-center justify-center mb-4">
+                    <i class="fa fa-flask text-3xl text-accentRed"></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">Strict Testing</h3>
+                <p class="text-gray-600 mb-4">Vibration, shock, thermal cycling, and overcharge tests for extreme reliability.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fa fa-check text-accentRed mr-2"></i> Nail penetration test</li>
+                    <li><i class="fa fa-check text-accentRed mr-2"></i> Crush & impact test</li>
+                    <li><i class="fa fa-check text-accentRed mr-2"></i> Overcharge & overdischarge</li>
+                    <li><i class="fa fa-check text-accentRed mr-2"></i> Thermal shock cycling</li>
+                </ul>
+            </div>
+            <!-- Global Certifications -->
+            <div class="bg-gray-50 p-8 rounded-xl card-hover border border-gray-200">
+                <div class="w-16 h-16 bg-accentRed/10 rounded-full flex items-center justify-center mb-4">
+                    <i class="fa fa-certificate text-3xl text-accentRed"></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">Global Certifications</h3>
+                <p class="text-gray-600 mb-4">Compliant with international standards for global market access.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-white border border-gray-300 px-3 py-1 text-sm font-bold text-gray-700 rounded">TUV SUD</span>
+                    <span class="bg-white border border-gray-300 px-3 py-1 text-sm font-bold text-gray-700 rounded">UL</span>
+                    <span class="bg-white border border-gray-300 px-3 py-1 text-sm font-bold text-gray-700 rounded">IEC</span>
+                    <span class="bg-white border border-gray-300 px-3 py-1 text-sm font-bold text-gray-700 rounded">UN38.3</span>
+                    <span class="bg-white border border-gray-300 px-3 py-1 text-sm font-bold text-gray-700 rounded">CE</span>
+                    <span class="bg-white border border-gray-300 px-3 py-1 text-sm font-bold text-gray-700 rounded">RoHS</span>
+                    <span class="bg-white border border-gray-300 px-3 py-1 text-sm font-bold text-gray-700 rounded">ISO9001</span>
+                    <span class="bg-white border border-gray-300 px-3 py-1 text-sm font-bold text-gray-700 rounded">MSDS</span>
                 </div>
             </div>
+            <!-- Eco-Friendly -->
+            <div class="bg-gray-50 p-8 rounded-xl card-hover border border-gray-200">
+                <div class="w-16 h-16 bg-accentRed/10 rounded-full flex items-center justify-center mb-4">
+                    <i class="fa fa-leaf text-3xl text-accentRed"></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">Eco-Friendly</h3>
+                <p class="text-gray-600 mb-4">Zero cobalt, nickel, and copper — environmentally sustainable production.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fa fa-check text-accentRed mr-2"></i> Cobalt-free chemistry</li>
+                    <li><i class="fa fa-check text-accentRed mr-2"></i> Nickel-free materials</li>
+                    <li><i class="fa fa-check text-accentRed mr-2"></i> Copper-free design</li>
+                    <li><i class="fa fa-check text-accentRed mr-2"></i> Fully recyclable</li>
+                    <li><i class="fa fa-check text-accentRed mr-2"></i> Low carbon footprint</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-light p-6 rounded-xl">
-                    <div class="text-3xl text-primary mb-4"><i class="fa fa-thermometer-half"></i></div>
-                    <h3 class="text-xl logo-font mb-2">Extreme Temperature Performance</h3>
-                    <p class="text-gray-600">Stable discharge from -40°C to 80°C, suitable for harsh environments.</p>
-                </div>
-                <div class="bg-light p-6 rounded-xl">
-                    <div class="text-3xl text-primary mb-4"><i class="fa fa-bolt"></i></div>
-                    <h3 class="text-xl logo-font mb-2">96%+ Efficiency</h3>
-                    <p class="text-gray-600">Ultra-high charge/discharge efficiency minimizes energy loss.</p>
-                </div>
-                <div class="bg-light p-6 rounded-xl">
-                    <div class="text-3xl text-primary mb-4"><i class="fa fa-refresh"></i></div>
-                    <h3 class="text-xl logo-font mb-2">10,000+ Cycles</h3>
-                    <p class="text-gray-600">Long cycle life with 15+ years of service durability.</p>
-                </div>
-                <div class="bg-light p-6 rounded-xl">
-                    <div class="text-3xl text-primary mb-4"><i class="fa fa-shield"></i></div>
-                    <h3 class="text-xl logo-font mb-2">Full Safety Certifications</h3>
-                    <p class="text-gray-600">TUV SUD, UL, IEC certified for global safety standards.</p>
+<!-- ==================== CTA Banner ==================== -->
+<section class="bg-primary text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl logo-font mb-4">Ready to Power Your Project?</h2>
+        <p class="text-lg opacity-90 max-w-2xl mx-auto mb-8">
+            Contact our engineering team for custom sodium-ion battery solutions tailored to your application.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="products.html" class="bg-accentRed text-white px-8 py-3 rounded font-bold hover:bg-red-700 transition-colors shadow-lg">
+                View Products
+            </a>
+            <a href="contact.html" class="border-2 border-white text-white px-8 py-3 rounded font-bold hover:bg-white hover:text-primary transition-colors">
+                Contact Us
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== Footer ==================== -->
+<footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl logo-font mb-4">SRPNA<span class="text-accentRed">+</span></h3>
+                <p class="text-gray-400">Powering a sustainable future with advanced sodium-ion battery solutions.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="index.html" class="hover:text-accentRed transition-colors">Home</a></li>
+                    <li><a href="technology.html" class="hover:text-accentRed transition-colors">Technology</a></li>
+                    <li><a href="products.html" class="hover:text-accentRed transition-colors">Products</a></li>
+                    <li><a href="solutions.html" class="hover:text-accentRed transition-colors">Solutions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><i class="fa fa-phone mr-2"></i> +86-13480197460</li>
+                    <li><i class="fa fa-envelope mr-2"></i> info@srpna-batt.com</li>
+                    <li><i class="fa fa-map-marker mr-2"></i> Shenzhen, China</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-weixin"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-twitter"></i></a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Quality & Safety -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-2xl logo-font text-primary mb-4">Quality & Safety Assurance</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Rigorous testing and global certifications ensure every battery meets the highest quality and safety standards.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-sm">
-                    <div class="text-3xl text-primary mb-4"><i class="fa fa-cogs"></i></div>
-                    <h3 class="text-xl logo-font mb-2">Strict Testing</h3>
-                    <p class="text-gray-600">Vibration, shock, thermal cycling, and overcharge tests for extreme reliability.</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-sm">
-                    <div class="text-3xl text-primary mb-4"><i class="fa fa-certificate"></i></div>
-                    <h3 class="text-xl logo-font mb-2">Global Certifications</h3>
-                    <p class="text-gray-600">Compliant with TUV SUD, UL, IEC, and UN38.3 for global market access.</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-sm">
-                    <div class="text-3xl text-primary mb-4"><i class="fa fa-leaf"></i></div>
-                    <h3 class="text-xl logo-font mb-2">Eco-Friendly</h3>
-                    <p class="text-gray-600">Zero cobalt, nickel, and copper — environmentally sustainable production.</p>
-                </div>
-            </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2026 SRPNA<span class="text-accentRed font-bold">+</span>. All rights reserved.</p>
         </div>
-    </section>
+    </div>
+</footer>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl logo-font mb-4">SRPNA<span class="text-accentRed">+</span></h3>
-                    <p class="text-gray-400">Powering a sustainable future with advanced sodium-ion battery solutions.</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="index.html" class="hover:text-accentRed transition-colors">Home</a></li>
-                        <li><a href="technology.html" class="hover:text-accentRed transition-colors">Technology</a></li>
-                        <li><a href="products.html" class="hover:text-accentRed transition-colors">Products</a></li>
-                        <li><a href="solutions.html" class="hover:text-accentRed transition-colors">Solutions</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><i class="fa fa-phone mr-2"></i> +86-13480197460</li>
-                        <li><i class="fa fa-envelope mr-2"></i> info@srpna-batt.com</li>
-                        <li><i class="fa fa-map-marker mr-2"></i> Shenzhen, China</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-weixin"></i></a>
-                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-linkedin"></i></a>
-                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2026 SRPNA<span class="text-accentRed font-bold">+</span>. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
