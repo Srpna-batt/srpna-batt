@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products | SRPNA+</title>
+    <title>Products | SRPNA+ Sodium-Ion Battery Cells - Cylindrical & Prismatic</title>
+    <meta name="description" content="SRPNA+ high-performance sodium-ion battery cells: 1.2Ah 18650 cylindrical, 15Ah 46145 cylindrical, 160Ah prismatic. 95-110Wh/kg, 35C max discharge, 10,000+ cycles.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script>
@@ -14,10 +15,12 @@
                         primary: '#0F4C81',
                         accentRed: '#FF0000',
                         dark: '#1A202C',
+                        industrial: '#2D3748',
+                        metal: '#A0AEC0',
                         light: '#F7FAFC'
                     },
                     fontFamily: {
-                        sans: ['Inter','system-ui','sans-serif']
+                        sans: ['Inter', 'system-ui', 'sans-serif']
                     }
                 }
             }
@@ -27,14 +30,24 @@
         @layer utilities {
             .logo-font { font-weight: 800; letter-spacing: 0.02em; }
             .logo-plus { color: #FF0000; position: relative; top: -0.2em; font-size: 0.7em; }
-            .product-card { transition: all 0.3s ease; }
-            .product-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(15,76,129,0.15); }
+            .card-hover { transition: all 0.3s ease; }
+            .card-hover:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
+            .industrial-border { border-left: 4px solid #FF0000; }
+            .hero-text-shadow {
+                text-shadow: 0 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5);
+            }
+            .hero-sub-shadow {
+                text-shadow: 0 1px 6px rgba(0,0,0,0.9), 0 0 12px rgba(0,0,0,0.6);
+            }
+            .spec-table th { background-color: #0F4C81; color: white; }
+            .spec-table tr:nth-child(even) { background-color: #f7fafc; }
         }
     </style>
 </head>
 <body class="bg-light font-sans text-dark">
-<!-- Navigation -->
-<nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+
+<!-- ==================== Navigation ==================== -->
+<nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 shadow-md">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
         <a href="index.html" class="text-2xl logo-font text-primary">SRPNA<span class="logo-plus">+</span></a>
         <div class="hidden md:flex space-x-8">
@@ -48,76 +61,230 @@
     </div>
 </nav>
 
-<!-- Hero -->
-<section class="bg-primary pt-32 pb-16 text-white">
-    <div class="container mx-auto px-4">
-        <h1 class="text-[clamp(2rem,4vw,3rem)] logo-font mb-4">Product Portfolio</h1>
-        <p class="text-lg opacity-90 max-w-2xl">High-performance sodium-ion battery cells for diverse industrial and commercial applications.</p>
+<!-- ==================== Hero: Factory Video Background ==================== -->
+<section class="relative w-full h-[420px] md:h-[500px] flex items-center overflow-hidden">
+    <video 
+        src="factory-tour.mp4" 
+        autoplay 
+        muted 
+        loop 
+        playsinline
+        preload="auto"
+        class="absolute w-full h-full object-cover"
+    ></video>
+    <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-dark/80 to-transparent"></div>
+    
+    <div class="container relative mx-auto px-4 text-white">
+        <div class="inline-block bg-accentRed px-3 py-1 text-xs font-bold tracking-widest mb-4 shadow-lg">
+            <i class="fa fa-cubes mr-1"></i> PRODUCT PORTFOLIO ·
+        </div>
+        <h1 class="text-[clamp(2rem,4vw,3.5rem)] logo-font leading-tight mb-4 hero-text-shadow">
+            Sodium-Ion Battery<br>
+            <span class="text-accentRed">Cell Products</span>
+        </h1>
+        <p class="text-lg md:text-xl opacity-95 max-w-2xl hero-sub-shadow">
+            High-performance cylindrical & prismatic sodium-ion cells for automotive, 
+            energy storage, and industrial applications.
+        </p>
     </div>
 </section>
 
-<!-- Cylindrical Cells -->
+<!-- ==================== Product Data Bar ==================== -->
+<section class="bg-dark text-white py-6 border-t-4 border-accentRed">
+    <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div>
+            <div class="text-2xl md:text-3xl font-bold text-accentRed">3</div>
+            <div class="text-xs text-gray-400 tracking-wider mt-1">CELL MODELS</div>
+        </div>
+        <div>
+            <div class="text-2xl md:text-3xl font-bold text-accentRed">110Wh/kg</div>
+            <div class="text-xs text-gray-400 tracking-wider mt-1">MAX ENERGY DENSITY</div>
+        </div>
+        <div>
+            <div class="text-2xl md:text-3xl font-bold text-accentRed">35C</div>
+            <div class="text-xs text-gray-400 tracking-wider mt-1">MAX DISCHARGE</div>
+        </div>
+        <div>
+            <div class="text-2xl md:text-3xl font-bold text-accentRed">10,000+</div>
+            <div class="text-xs text-gray-400 tracking-wider mt-1">CYCLE LIFE</div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== Cylindrical Cells ==================== -->
 <section class="py-20 bg-white">
     <div class="container mx-auto px-4">
-        <h2 class="text-2xl logo-font text-primary mb-12 text-center">Cylindrical Sodium-Ion Cells</h2>
+        <div class="text-center mb-12">
+            <div class="text-accentRed text-sm font-bold tracking-widest mb-2">CYLINDRICAL CELLS </div>
+            <h2 class="text-3xl logo-font text-primary">Cylindrical Sodium-Ion Cells</h2>
+            <p class="text-gray-600 mt-3 max-w-2xl mx-auto">
+                High-power and high-energy cylindrical cells for start-stop systems, 
+                power tools, and energy storage applications.
+            </p>
+        </div>
+
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- 1.2Ah -->
-            <div class="product-card bg-light p-8 rounded-xl shadow-sm">
-                <div class="h-48 bg-gray-100 rounded-lg flex items-center justify-center mb-6 overflow-hidden">
-                    <img src="img1.png" alt="NaCR18650-1.2ER" class="w-full h-full object-contain p-4">
+            <!-- 1.2Ah 18650 -->
+            <div class="bg-gray-50 rounded-xl overflow-hidden card-hover border border-gray-200 shadow-sm">
+                <!-- 产品图片区 -->
+                <div class="h-56 bg-white flex items-center justify-center overflow-hidden border-b border-gray-200">
+                    <img src="img1.png" alt="NaCR18650-1.2ER 1.2Ah Cylindrical Cell" class="w-full h-full object-contain p-6">
                 </div>
-                <h3 class="text-xl logo-font mb-2">NaCR18650-1.2ER</h3>
-                <p class="text-gray-600 mb-4">1.2Ah High-Power Cylindrical Cell</p>
-                <ul class="space-y-2 text-gray-600 mb-6">
-                    <li><span class="font-semibold">Energy Density:</span> 95Wh/kg</li>
-                    <li><span class="font-semibold">Max Discharge Rate:</span> 35C</li>
-                    <li><span class="font-semibold">Cycle Life:</span> 3,000+ cycles</li>
-                    <li><span class="font-semibold">Application:</span> Start-stop, power tools</li>
-                </ul>
-                <a href="contact.html" class="text-primary font-semibold hover:text-accentRed transition-colors">Request Quote <i class="fa fa-arrow-right ml-2"></i></a>
+                <!-- 产品信息 -->
+                <div class="p-8">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl logo-font text-primary">NaCR18650-1.2ER</h3>
+                        <span class="bg-accentRed/10 text-accentRed text-xs font-bold px-2 py-1 rounded">HIGH POWER</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">1.2Ah High-Power Cylindrical Cell</p>
+                    <!-- 参数列表 -->
+                    <ul class="space-y-2 text-gray-600 mb-6 text-sm">
+                        <li class="flex justify-between border-b border-gray-200 pb-1">
+                            <span class="font-semibold">Nominal Capacity</span><span>1.2Ah</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-200 pb-1">
+                            <span class="font-semibold">Energy Density</span><span>95Wh/kg</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-200 pb-1">
+                            <span class="font-semibold">Max Discharge Rate</span><span>35C</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-200 pb-1">
+                            <span class="font-semibold">Cycle Life</span><span>3,000+ cycles</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-semibold">Dimension</span><span>18650</span>
+                        </li>
+                    </ul>
+                    <div class="mb-6">
+                        <h4 class="text-sm font-bold text-primary mb-2"><i class="fa fa-check-circle text-accentRed mr-1"></i> Applications</h4>
+                        <p class="text-sm text-gray-600">Start-stop systems, power tools, micro-hybrid vehicles.</p>
+                    </div>
+                    <a href="contact.html" class="inline-block bg-primary text-white px-6 py-2 rounded font-bold hover:bg-primary/80 transition-colors text-sm">
+                        Request Quote <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
             </div>
-            <!-- 15Ah -->
-            <div class="product-card bg-light p-8 rounded-xl shadow-sm">
-                <div class="h-48 bg-gray-100 rounded-lg flex items-center justify-center mb-6 overflow-hidden">
-                    <img src="img2.png" alt="NaCR46145-15ER" class="w-full h-full object-contain p-4">
+
+            <!-- 15Ah 46145 -->
+            <div class="bg-gray-50 rounded-xl overflow-hidden card-hover border border-gray-200 shadow-sm">
+                <div class="h-56 bg-white flex items-center justify-center overflow-hidden border-b border-gray-200">
+                    <img src="img2.png" alt="NaCR46145-15ER 15Ah Cylindrical Cell" class="w-full h-full object-contain p-6">
                 </div>
-                <h3 class="text-xl logo-font mb-2">NaCR46145-15ER</h3>
-                <p class="text-gray-600 mb-4">15Ah High-Energy Cylindrical Cell</p>
-                <ul class="space-y-2 text-gray-600 mb-6">
-                    <li><span class="font-semibold">Energy Density:</span> 95Wh/kg</li>
-                    <li><span class="font-semibold">Max Discharge Rate:</span> 15C</li>
-                    <li><span class="font-semibold">Cycle Life:</span> 6,000+ cycles</li>
-                    <li><span class="font-semibold">Application:</span> Heavy-duty, energy storage</li>
-                </ul>
-                <a href="contact.html" class="text-primary font-semibold hover:text-accentRed transition-colors">Request Quote <i class="fa fa-arrow-right ml-2"></i></a>
+                <div class="p-8">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl logo-font text-primary">NaCR46145-15ER</h3>
+                        <span class="bg-primary/10 text-primary text-xs font-bold px-2 py-1 rounded">HIGH ENERGY</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">15Ah High-Energy Cylindrical Cell</p>
+                    <ul class="space-y-2 text-gray-600 mb-6 text-sm">
+                        <li class="flex justify-between border-b border-gray-200 pb-1">
+                            <span class="font-semibold">Nominal Capacity</span><span>15Ah</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-200 pb-1">
+                            <span class="font-semibold">Energy Density</span><span>95Wh/kg</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-200 pb-1">
+                            <span class="font-semibold">Max Discharge Rate</span><span>15C</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-200 pb-1">
+                            <span class="font-semibold">Cycle Life</span><span>6,000+ cycles</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-semibold">Dimension</span><span>46145</span>
+                        </li>
+                    </ul>
+                    <div class="mb-6">
+                        <h4 class="text-sm font-bold text-primary mb-2"><i class="fa fa-check-circle text-accentRed mr-1"></i> Applications</h4>
+                        <p class="text-sm text-gray-600">Heavy-duty vehicles, energy storage, industrial equipment.</p>
+                    </div>
+                    <a href="contact.html" class="inline-block bg-primary text-white px-6 py-2 rounded font-bold hover:bg-primary/80 transition-colors text-sm">
+                        Request Quote <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Prismatic Cells -->
-<section class="py-20 bg-gray-50">
+<!-- ==================== Prismatic Cells ==================== -->
+<section class="py-20 bg-gray-50 border-y border-gray-300">
     <div class="container mx-auto px-4">
-        <h2 class="text-2xl logo-font text-primary mb-12 text-center">Prismatic Sodium-Ion Cells</h2>
-        <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-sm">
-            <div class="h-56 bg-gray-100 rounded-lg flex items-center justify-center mb-6 overflow-hidden">
-                <img src="img3.png" alt="NaCP71173208-160E3" class="w-full h-full object-contain p-4">
+        <div class="text-center mb-12">
+            <div class="text-accentRed text-sm font-bold tracking-widest mb-2">PRISMATIC CELLS </div>
+            <h2 class="text-3xl logo-font text-primary">Prismatic Sodium-Ion Cells</h2>
+            <p class="text-gray-600 mt-3 max-w-2xl mx-auto">
+                Long-cycle prismatic cells designed for large-scale energy storage, 
+                forklifts, and residential ESS applications.
+            </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-white rounded-xl overflow-hidden card-hover border border-gray-200 shadow-lg">
+                <div class="h-64 bg-white flex items-center justify-center overflow-hidden border-b border-gray-200">
+                    <img src="img3.png" alt="NaCP71173208-160E3 160Ah Prismatic Cell" class="w-full h-full object-contain p-6">
+                </div>
+                <div class="p-8">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-2xl logo-font text-primary">NaCP71173208-160E3</h3>
+                        <span class="bg-accentRed/10 text-accentRed text-xs font-bold px-2 py-1 rounded">LONG CYCLE</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">160Ah Long-Cycle Prismatic Cell</p>
+                    
+                    <!-- 参数表格 -->
+                    <div class="overflow-x-auto mb-6">
+                        <table class="spec-table w-full text-sm border-collapse">
+                            <thead>
+                                <tr>
+                                    <th class="px-4 py-2 text-left">Parameter</th>
+                                    <th class="px-4 py-2 text-left">Specification</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="px-4 py-2 border border-gray-200 font-semibold">Nominal Capacity</td><td class="px-4 py-2 border border-gray-200">160Ah</td></tr>
+                                <tr><td class="px-4 py-2 border border-gray-200 font-semibold">Energy Density</td><td class="px-4 py-2 border border-gray-200">110Wh/kg</td></tr>
+                                <tr><td class="px-4 py-2 border border-gray-200 font-semibold">Max Discharge Rate</td><td class="px-4 py-2 border border-gray-200">4C</td></tr>
+                                <tr><td class="px-4 py-2 border border-gray-200 font-semibold">Cycle Life</td><td class="px-4 py-2 border border-gray-200">10,000+ cycles</td></tr>
+                                <tr><td class="px-4 py-2 border border-gray-200 font-semibold">Voltage Range</td><td class="px-4 py-2 border border-gray-200">1.5V ~ 3.45V</td></tr>
+                                <tr><td class="px-4 py-2 border border-gray-200 font-semibold">Operating Temp</td><td class="px-4 py-2 border border-gray-200">-40°C ~ 80°C</td></tr>
+                                <tr><td class="px-4 py-2 border border-gray-200 font-semibold">Dimension (W×H×T)</td><td class="px-4 py-2 border border-gray-200">173×208×71mm</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-sm font-bold text-primary mb-2"><i class="fa fa-check-circle text-accentRed mr-1"></i> Applications</h4>
+                        <p class="text-sm text-gray-600">Energy storage systems (ESS), electric forklifts, residential energy storage, commercial & industrial backup power.</p>
+                    </div>
+                    <a href="contact.html" class="inline-block bg-accentRed text-white px-8 py-3 rounded font-bold hover:bg-red-700 transition-colors">
+                        Request Quote <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
             </div>
-            <h3 class="text-xl logo-font mb-2">NaCP71173208-160E3</h3>
-            <p class="text-gray-600 mb-4">160Ah Long-Cycle Prismatic Cell</p>
-            <div class="grid grid-cols-2 gap-4 mb-6">
-                <div class="text-gray-600"><span class="font-semibold">Energy Density:</span> 110Wh/kg</div>
-                <div class="text-gray-600"><span class="font-semibold">Max Discharge Rate:</span> 4C</div>
-                <div class="text-gray-600"><span class="font-semibold">Cycle Life:</span> 10,000+ cycles</div>
-                <div class="text-gray-600"><span class="font-semibold">Voltage Range:</span> 1.5~3.45V</div>
-            </div>
-            <p class="text-gray-600 mb-6"><span class="font-semibold">Application:</span> Energy storage, forklifts, residential systems</p>
-            <a href="contact.html" class="text-primary font-semibold hover:text-accentRed transition-colors">Request Quote <i class="fa fa-arrow-right ml-1"></i></a>
         </div>
     </div>
 </section>
 
-<!-- Footer -->
+
+<!-- ==================== CTA Banner ==================== -->
+<section class="bg-primary text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl logo-font mb-4">Need a Custom Cell Specification?</h2>
+        <p class="text-lg opacity-90 max-w-2xl mx-auto mb-8">
+            Our engineering team supports OEM/ODM customization for capacity, dimension, 
+            and performance tailored to your application.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="solutions.html" class="bg-accentRed text-white px-8 py-3 rounded font-bold hover:bg-red-700 transition-colors shadow-lg">
+                View Solutions
+            </a>
+            <a href="contact.html" class="border-2 border-white text-white px-8 py-3 rounded font-bold hover:bg-white hover:text-primary transition-colors">
+                Contact Engineer
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== Footer ==================== -->
 <footer class="bg-dark text-white py-12">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -137,9 +304,9 @@
             <div>
                 <h4 class="text-lg font-semibold mb-4">Contact</h4>
                 <ul class="space-y-2 text-gray-400">
-                    <li><i class="fa fa-phone mr-2"></i> +86-13480107460</li>
+                    <li><i class="fa fa-phone mr-2"></i> +86-13480197460</li>
                     <li><i class="fa fa-envelope mr-2"></i> info@srpna-batt.com</li>
-                    <li><i class="fa fa-map-marker mr-2"></i> NanShan, China</li>
+                    <li><i class="fa fa-map-marker mr-2"></i> Shenzhen, China</li>
                 </ul>
             </div>
             <div>
@@ -156,5 +323,6 @@
         </div>
     </div>
 </footer>
+
 </body>
 </html>
