@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | SRPNA+</title>
+    <title>Contact Us | SRPNA+ Sodium-Ion Battery Manufacturer</title>
+    <meta name="description" content="Contact SRPNA+ sodium-ion battery manufacturer. China HQ in Shenzhen, factories in Guangzhou & Neijiang, Europe office in Prague. Request a quote for battery cells and OEM/ODM service.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script>
@@ -14,6 +15,8 @@
                         primary: '#0F4C81',
                         accentRed: '#FF0000',
                         dark: '#1A202C',
+                        industrial: '#2D3748',
+                        metal: '#A0AEC0',
                         light: '#F7FAFC'
                     },
                     fontFamily: {
@@ -25,119 +28,351 @@
     </script>
     <style type="text/tailwindcss">
         @layer utilities {
-            .logo-font {
-                font-weight: 800;
-                letter-spacing: 0.02em;
+            .logo-font { font-weight: 800; letter-spacing: 0.02em; }
+            .logo-plus { color: #FF0000; position: relative; top: -0.2em; font-size: 0.7em; }
+            .card-hover { transition: all 0.3s ease; }
+            .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
+            .industrial-border { border-left: 4px solid #FF0000; }
+            .hero-text-shadow {
+                text-shadow: 0 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5);
             }
-            .logo-plus {
-                color: #FF0000;
-                position: relative;
-                top: -0.2em;
-                font-size: 0.7em;
+            .hero-sub-shadow {
+                text-shadow: 0 1px 6px rgba(0,0,0,0.9), 0 0 12px rgba(0,0,0,0.6);
+            }
+            .form-input {
+                width: 100%;
+                padding: 0.75rem 1rem;
+                border: 1px solid #CBD5E0;
+                border-radius: 0.5rem;
+                background: #fff;
+                color: #1A202C;
+                font-size: 0.9rem;
+                transition: border-color 0.2s, box-shadow 0.2s;
+            }
+            .form-input:focus {
+                outline: none;
+                border-color: #0F4C81;
+                box-shadow: 0 0 0 3px rgba(15,76,129,0.15);
+            }
+            .form-label {
+                display: block;
+                font-size: 0.8rem;
+                font-weight: 700;
+                color: #2D3748;
+                margin-bottom: 0.35rem;
+                letter-spacing: 0.02em;
             }
         }
     </style>
 </head>
 <body class="bg-light font-sans text-dark">
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl logo-font text-primary">SRPNA<span class="logo-plus">+</span></a>
-            <div class="hidden md:flex space-x-8">
-                <a href="index.html" class="font-medium hover:text-primary transition-colors">Home</a>
-                <a href="technology.html" class="font-medium hover:text-primary transition-colors">Technology</a>
-                <a href="products.html" class="font-medium hover:text-primary transition-colors">Products</a>
-                <a href="solutions.html" class="font-medium hover:text-primary transition-colors">Solutions</a>
-                <a href="contact.html" class="font-medium text-primary">Contact</a>
+
+<!-- ==================== Navigation ==================== -->
+<nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl logo-font text-primary">SRPNA<span class="logo-plus">+</span></a>
+        <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="font-medium hover:text-primary transition-colors">Home</a>
+            <a href="technology.html" class="font-medium hover:text-primary transition-colors">Technology</a>
+            <a href="products.html" class="font-medium hover:text-primary transition-colors">Products</a>
+            <a href="solutions.html" class="font-medium hover:text-primary transition-colors">Solutions</a>
+            <a href="contact.html" class="font-medium text-primary">Contact</a>
+        </div>
+        <button class="md:hidden text-xl"><i class="fa fa-bars"></i></button>
+    </div>
+</nav>
+
+<!-- ==================== Hero: Factory Video Background ==================== -->
+<section class="relative w-full h-[420px] md:h-[500px] flex items-center overflow-hidden">
+    <video
+        src="factory-tour.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        class="absolute w-full h-full object-cover"
+    ></video>
+    <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-dark/80 to-transparent"></div>
+
+    <div class="container relative mx-auto px-4 text-white">
+        <div class="inline-block bg-accentRed px-3 py-1 text-xs font-bold tracking-widest mb-4 shadow-lg">
+            <i class="fa fa-headset mr-1"></i> CONTACT US
+        </div>
+        <h1 class="text-[clamp(2rem,4vw,3.5rem)] logo-font leading-tight mb-4 hero-text-shadow">
+            Let's Build Your<br>
+            <span class="text-accentRed">Battery Solution</span>
+        </h1>
+        <p class="text-lg md:text-xl opacity-95 max-w-2xl hero-sub-shadow">
+            Talk to our sales and engineering teams in China &amp; Europe for product specs, OEM/ODM customization, and global export support.
+        </p>
+    </div>
+</section>
+
+<!-- ==================== Contact Info Cards ==================== -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <div class="text-accentRed text-sm font-bold tracking-widest mb-2">GET IN TOUCH</div>
+            <h2 class="text-3xl logo-font text-primary">Global Contact Information</h2>
+            <p class="text-gray-600 mt-3 max-w-2xl mx-auto">
+                China headquarters, manufacturing bases, and European office are all ready to support your project.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- 公司总部（深圳） -->
+            <div class="bg-gray-50 rounded-xl p-8 card-hover border border-gray-200 industrial-border">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                        <i class="fa fa-building text-xl text-primary"></i>
+                    </div>
+                    <span class="bg-primary/10 text-primary text-xs font-bold px-2 py-1 rounded">CHINA HQ</span>
+                </div>
+                <h3 class="text-lg font-bold text-primary mb-2">China Headquarters</h3>
+                <p class="text-gray-700 text-sm mb-1"><i class="fa fa-map-marker text-accentRed mr-2"></i>Shenzhen, Guangdong, China</p>
+                <p class="text-gray-600 text-sm">Company address · 公司地址</p>
             </div>
-            <button class="md:hidden text-dark text-xl"><i class="fa fa-bars"></i></button>
-        </div>
-    </nav>
 
-    <!-- Hero -->
-    <section class="bg-primary pt-32 pb-16 text-white">
-        <div class="container mx-auto px-4">
-            <h1 class="text-[clamp(2rem,4vw,3rem)] logo-font mb-4">Get In Touch</h1>
-            <p class="text-lg opacity-90 max-w-2xl">Ready to explore sodium-ion battery solutions? Contact our team for inquiries, quotes, and partnerships.</p>
-        </div>
-    </section>
+      
+            <div class="bg-gray-50 rounded-xl p-8 card-hover border border-gray-200 industrial-border">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                        <i class="fa fa-globe text-xl text-primary"></i>
+                    </div>
+                    <span class="bg-accentRed/10 text-accentRed text-xs font-bold px-2 py-1 rounded">EUROPE OFFICE</span>
+                </div>
+                <h3 class="text-lg font-bold text-primary mb-2">European Regional Office</h3>
+                <p class="text-gray-700 text-sm mb-2"><i class="fa fa-map-marker text-accentRed mr-2"></i>Na Provaznici 2063/3, Smichov, 150 00 Praha, Czech Republic</p>
+                <ul class="space-y-1 text-sm text-gray-700">
+                    <li><i class="fa fa-user text-accentRed mr-2"></i>Contact: Rui Yang</li>
+                    <li><i class="fa fa-phone text-accentRed mr-2"></i>+420 774 336 505</li>
+                    <li><i class="fa fa-envelope text-accentRed mr-2"></i>info@wetapeveuro.com</li>
+                </ul>
+            </div>
 
-    <!-- Contact Section -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Contact Info -->
-                <div>
-                    <h2 class="text-2xl logo-font text-primary mb-6">Contact Information</h2>
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
-                                <i class="fa fa-map-marker text-primary"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-lg">Address</h3>
-                                <p class="text-gray-600">Aerospace Building B, Nanshan District,Shenzhen, Guangdong, China</p>
-                            </div>
+    
+            <div class="bg-gray-50 rounded-xl p-8 card-hover border border-gray-200 industrial-border">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                        <i class="fa fa-industry text-xl text-primary"></i>
+                    </div>
+                    <span class="bg-primary/10 text-primary text-xs font-bold px-2 py-1 rounded">FACTORIES</span>
+                </div>
+                <h3 class="text-lg font-bold text-primary mb-2">Manufacturing Bases</h3>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li><i class="fa fa-map-marker text-accentRed mr-2"></i>Guangzhou, Guangdong, China<br><span class="text-gray-500 text-xs ml-6">Factory 1</span></li>
+                    <li><i class="fa fa-map-marker text-accentRed mr-2"></i>Neijiang, Sichuan, China<br><span class="text-gray-500 text-xs ml-6">Factory 2 · </span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== Contact Form + Factory Info ==================== -->
+<section class="py-20 bg-gray-50 border-y border-gray-300">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- 左：询盘表单 -->
+            <div class="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
+                <div class="text-accentRed text-sm font-bold tracking-widest mb-2">REQUEST A QUOTE ·</div>
+                <h2 class="text-2xl logo-font text-primary mb-6">Send Us Your Inquiry</h2>
+
+                <form action="#" method="POST" class="space-y-5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="form-label" for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Full name" required>
                         </div>
-                        <div class="flex items-start">
-                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
-                                <i class="fa fa-phone text-primary"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-lg">Phone</h3>
-                                <p class="text-gray-600">+86-13480197460</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
-                                <i class="fa fa-envelope text-primary"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-lg">Email</h3>
-                                <p class="text-gray-600">info@srpna-batt.com | sales@srpna-batt.com</p>
-                            </div>
+                        <div>
+                            <label class="form-label" for="company">Company</label>
+                            <input type="text" id="company" name="company" class="form-input" placeholder="Company name">
                         </div>
                     </div>
-                    <div class="mt-8">
-                        <h3 class="font-bold text-lg mb-4">Follow Us</h3>
-                        <div class="flex space-x-4">
-                            <a href="#" class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors"><i class="fa fa-weixin text-primary"></i></a>
-                            <a href="#" class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors"><i class="fa fa-linkedin text-primary"></i></a>
-                            <a href="#" class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors"><i class="fa fa-twitter text-primary"></i></a>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="form-label" for="email">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="you@company.com" required>
+                        </div>
+                        <div>
+                            <label class="form-label" for="phone">Phone / WhatsApp</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+86... / +420...">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="form-label" for="region">Your Region</label>
+                        <select id="region" name="region" class="form-input">
+                            <option value="">-- Select --</option>
+                            <option value="europe">Europe</option>
+                            <option value="asia">Asia</option>
+                            <option value="north-america">North America</option>
+                            <option value="south-america">South America</option>
+                            <option value="africa">Africa</option>
+                            <option value="middle-east">Middle East</option>
+                            <option value="oceania">Oceania</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="form-label" for="product">Product / Solution of Interest</label>
+                        <select id="product" name="product" class="form-input">
+                            <option value="">-- Select --</option>
+                            <option value="cylindrical">Cylindrical Cells (1.2Ah / 15Ah)</option>
+                            <option value="prismatic">Prismatic Cells (160Ah)</option>
+                            <option value="startstop">Automotive Start-Stop Battery</option>
+                            <option value="truck">Heavy-Duty Truck Battery</option>
+                            <option value="ups">UPS Backup Power</option>
+                            <option value="ess">ESS Energy Storage System</option>
+                            <option value="oem">OEM / ODM Customization</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="form-label" for="message">Your Message *</label>
+                        <textarea id="message" name="message" rows="5" class="form-input" placeholder="Tell us about your application, target quantity, and requirements..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-accentRed text-white py-3 rounded-lg font-bold hover:bg-red-700 transition-colors shadow-lg">
+                        <i class="fa fa-paper-plane mr-2"></i> Send Inquiry
+                    </button>
+                    <p class="text-xs text-gray-500 text-center mt-2">
+                        We respect your privacy. Your information is only used to respond to your inquiry.
+                    </p>
+                </form>
+            </div>
+
+            <!-- 右：工厂信息 + 定位 -->
+            <div class="space-y-6">
+                <!-- 工厂要点 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
+                    <div class="text-accentRed text-sm font-bold tracking-widest mb-2">WHY CHOOSE US </div>
+                    <h2 class="text-2xl logo-font text-primary mb-6">Factory Direct Advantages</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-industry text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary">Dual Manufacturing Bases</h4>
+                                <p class="text-sm text-gray-600">Factories in Guangzhou &amp; Neijiang, 6 automated production lines, 1GWh annual capacity.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-cogs text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary">OEM / ODM Support</h4>
+                                <p class="text-sm text-gray-600">Custom cell design, private label packaging, and brand customization.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-ship text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary">Global Export Service</h4>
+                                <p class="text-sm text-gray-600">EXW / FOB / CIF terms, dangerous-goods certified shipping worldwide.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-certificate text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary">Certified Quality</h4>
+                                <p class="text-sm text-gray-600">UN38.3, IEC62619, CE, RoHS, ISO9001 certified products.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 欧洲 + 中国定位卡片 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
+                        <div class="h-32 bg-gray-200 flex items-center justify-center relative">
+                            <i class="fa fa-globe-europe text-4xl text-primary/40"></i>
+                        </div>
+                        <div class="p-4">
+                            <div class="text-sm font-bold text-primary mb-1"><i class="fa fa-map-marker text-accentRed mr-1"></i> Europe Office</div>
+                            <p class="text-xs text-gray-600">Prague, Czech Republic</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
+                        <div class="h-32 bg-gray-200 flex items-center justify-center relative">
+                            <i class="fa fa-map-marked-alt text-4xl text-primary/40"></i>
+                        </div>
+                        <div class="p-4">
+                            <div class="text-sm font-bold text-primary mb-1"><i class="fa fa-map-marker text-accentRed mr-1"></i> China</div>
+                            <p class="text-xs text-gray-600">HQ: Shenzhen · Factories: Guangzhou, Neijiang</p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-                <!-- Contact Form -->
-                <div class="bg-light p-8 rounded-xl shadow-sm">
-                    <h2 class="text-2xl logo-font text-primary mb-6">Send Us a Message</h2>
-                    <form>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                            <div>
-                                <label class="block text-gray-700 mb-2">Name</label>
-                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 mb-2">Email</label>
-                                <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <label class="block text-gray-700 mb-2">Subject</label>
-                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
-                        </div>
-                        <div class="mb-6">
-                            <label class="block text-gray-700 mb-2">Message</label>
-                            <textarea rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">Send Message</button>
-                    </form>
+<!-- ==================== CTA Banner ==================== -->
+<section class="bg-primary text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl logo-font mb-4">Ready to Start Your Project?</h2>
+        <p class="text-lg opacity-90 max-w-2xl mx-auto mb-8">
+            Get a competitive factory-direct quote for sodium-ion battery cells and solutions within 24 hours.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="products.html" class="bg-accentRed text-white px-8 py-3 rounded font-bold hover:bg-red-700 transition-colors shadow-lg">
+                View Products
+            </a>
+            <a href="mailto:info@wetapeveuro.com" class="border-2 border-white text-white px-8 py-3 rounded font-bold hover:bg-white hover:text-primary transition-colors">
+                <i class="fa fa-envelope mr-2"></i> Email US
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== Footer ==================== -->
+<footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl logo-font mb-4">SRPNA<span class="text-accentRed">+</span></h3>
+                <p class="text-gray-400">Powering a sustainable future with advanced sodium-ion battery solutions.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="index.html" class="hover:text-accentRed transition-colors">Home</a></li>
+                    <li><a href="technology.html" class="hover:text-accentRed transition-colors">Technology</a></li>
+                    <li><a href="products.html" class="hover:text-accentRed transition-colors">Products</a></li>
+                    <li><a href="solutions.html" class="hover:text-accentRed transition-colors">Solutions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><i class="fa fa-building mr-2"></i> Shenzhen, China (HQ)</li>
+                    <li><i class="fa fa-industry mr-2"></i> Guangzhou &amp; Neijiang (Factories)</li>
+                    <li><i class="fa fa-globe mr-2"></i> Prague, Czech Republic (EU)</li>
+                    <li><i class="fa fa-envelope mr-2"></i> info@srpna-batt.com</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-weixin"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-twitter"></i></a>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2026 SRPNA<span class="text-accentRed font-bold">+</span>. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap
+</body>
+</html>
