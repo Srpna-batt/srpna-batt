@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO标题描述可自行修改适配汽车启停电池 -->
     <title>Automotive Start-Stop | SRPNA+ Sodium Ion Car Battery</title>
     <meta name="description" content="SRPNA+ H5/H6/H7/H8/H9 12V sodium ion start-stop battery, 700A CCA, -50°C ultra low temperature startup for passenger vehicles.">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -31,26 +30,7 @@
             .logo-plus { color: #FF0000; position: relative; top: -0.2em; font-size: 0.7em; }
         }
     </style>
-</head>
-<body class="bg-light font-sans text-dark">
-<!-- 导航栏【完全保留原链接，不改动】 -->
-<nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="index.html" class="text-2xl logo-font text-primary">SRPNA<span class="logo-plus">+</span></a>
-        <div class="hidden md:flex space-x-8">
-            <a href="index.html" class="font-medium hover:text-primary transition-colors">Home</a>
-            <a href="technology.html" class="font-medium hover:text-primary transition-colors">Technology</a>
-            <a href="products.html" class="font-medium hover:text-primary transition-colors">Products</a>
-            <a href="solutions.html" class="font-medium text-primary">Solutions</a>
-            <a href="contact.html" class="font-medium hover:text-primary transition-colors">Contact</a>
-        </div>
-        <button class="md:hidden text-xl"><i class="fa fa-bars"></i></button>
-    </div>
-</nav>
-
-
-
- <style>
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -70,12 +50,43 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             overflow: hidden;
         }
-        .header {
-            background: linear-gradient(135deg, #0070C0 0%, #003366 100%);
-            color: #fff;
-            padding: 40px;
-            text-align: center;
+
+        /* Banner 改为全屏视频播放窗口 */
+    .header {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+        #bannerVideo {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            background: #000;
         }
+
+        /* 视频遮罩，增强标题可读性 */
+        .header-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(0,112,192,0.55) 0%, rgba(0,51,102,0.65) 100%);
+            z-index: 2;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 3;
+            padding: 40px;
+        }
+
         .header h1 {
             font-size: 32px;
             font-weight: 700;
@@ -83,8 +94,9 @@
         }
         .header p {
             font-size: 16px;
-            opacity: 0.9;
+            opacity: 0.95;
         }
+
         .section {
             padding: 30px 40px;
             border-bottom: 1px solid #e5e7eb;
@@ -158,159 +170,124 @@
         }
     </style>
 </head>
+<body class="bg-light font-sans text-dark">
+
+<nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl logo-font text-primary">SRPNA<span class="logo-plus">+</span></a>
+        <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="font-medium hover:text-primary transition-colors">Home</a>
+            <a href="technology.html" class="font-medium hover:text-primary transition-colors">Technology</a>
+            <a href="products.html" class="font-medium hover:text-primary transition-colors">Products</a>
+            <a href="solutions.html" class="font-medium text-primary">Solutions</a>
+            <a href="contact.html" class="font-medium hover:text-primary transition-colors">Contact</a>
+        </div>
+        <button class="md:hidden text-xl"><i class="fa fa-bars"></i></button>
+    </div>
+</nav>
+
 <section class="py-20 bg-white">
     <div class="container mx-auto px-4 max-w-5xl">
-        <body>
-    <div class="container">
-        <div class="header">
-            <h1>SPRNA+ Sodium-ion Start-Stop Battery Series</h1>
-            <p>High Performance Sodium-ion Batteries for Automotive Start-Stop Systems</p>
-        </div>
+        <div class="container">
 
-        <div class="section">
-            <h2>Product Overview</h2>
-            <p>
-                The SPRNA+ Sodium-ion Start-Stop Battery Series is a new generation of automotive power batteries designed for modern vehicle start-stop systems.
-                Featuring advanced NFPP sodium-ion cell technology, these batteries deliver exceptional cycle life, extreme temperature performance, and high CCA output,
-                making them an ideal replacement for traditional lead-acid batteries. With a standard 12V rated voltage, the series offers 5 models with varying power
-                and size specifications to fit a wide range of passenger and commercial vehicles.
-            </p>
-        </div>
+            <!-- Banner 整区改为启动电池视频播放窗口 -->
+            <div class="header">
+                <video 
+                    id="bannerVideo"
+                    src="battery-startup.mp4" 
+                    autoplay 
+                    muted 
+                    loop 
+                    playsinline 
+                    preload="auto">
+                </video>
 
-        <div class="section">
-            <h2>Core Product Features</h2>
-            <div class="features-grid">
-                
-                <div class="feature-card">
-                    <h3>Feature 1</h3>
-                    <p>Ultra-long Cycle Life: ≥6000 cycles, far exceeding traditional lead-acid batteries, ensuring long-term reliable performance for start-stop applications</p>
+                <div class="header-overlay"></div>
+
+                <div class="header-content">
+                    <h1>SPRNA+ Sodium-ion Start-Stop Battery Series</h1>
+                    <p>High Performance Sodium-ion Batteries for Automotive Start-Stop Systems</p>
                 </div>
-                
-                <div class="feature-card">
-                    <h3>Feature 2</h3>
-                    <p>Excellent Extreme Temperature Performance: Discharge range from -50℃ to 80℃, stable power output in extreme cold and hot weather conditions</p>
-                </div>
-                
-                <div class="feature-card">
-                    <h3>Feature 3</h3>
-                    <p>High CCA Starting Performance: Up to 1000A CCA, providing strong and reliable starting power for various passenger and commercial vehicles</p>
-                </div>
-                
-                <div class="feature-card">
-                    <h3>Feature 4</h3>
-                    <p>Ultra-low Internal Resistance: ≤5mΩ, supporting high power output and fast charging capability, meeting the high power demand of start-stop systems</p>
-                </div>
-                
-                <div class="feature-card">
-                    <h3>Feature 5</h3>
-                    <p>High Safety & Reliability: Stable NFPP sodium-ion cell chemistry, flame-retardant PC+ABS housing, no risk of thermal runaway under normal use</p>
-                </div>
-                
-                <div class="feature-card">
-                    <h3>Feature 6</h3>
-                    <p>Low Self-Discharge: ≤2% per month, maintaining sufficient power for vehicle starting even after long-term parking</p>
-                </div>
-                
             </div>
+
+            <div class="section">
+                <h2>Product Overview</h2>
+                <p>
+                    The SPRNA+ Sodium-ion Start-Stop Battery Series is a new generation of automotive power batteries designed for modern vehicle start-stop systems.
+                    Featuring advanced NFPP sodium-ion cell technology, these batteries deliver exceptional cycle life, extreme temperature performance, and high CCA output,
+                    making them an ideal replacement for traditional lead-acid batteries. With a standard 12V rated voltage, the series offers 5 models with varying power
+                    and size specifications to fit a wide range of passenger and commercial vehicles.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Core Product Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Feature 1</h3>
+                        <p>Ultra-long Cycle Life: ≥6000 cycles, far exceeding traditional lead-acid batteries, ensuring long-term reliable performance for start-stop applications</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Feature 2</h3>
+                        <p>Excellent Extreme Temperature Performance: Discharge range from -50℃ to 80℃, stable power output in extreme cold and hot weather conditions</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Feature 3</h3>
+                        <p>High CCA Starting Performance: Up to 1000A CCA, providing strong and reliable starting power for various passenger and commercial vehicles</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Feature 4</h3>
+                        <p>Ultra-low Internal Resistance: ≤5mΩ, supporting high power output and fast charging capability, meeting the high power demand of start-stop systems</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Feature 5</h3>
+                        <p>High Safety & Reliability: Stable NFPP sodium-ion cell chemistry, flame-retardant PC+ABS housing, no risk of thermal runaway under normal use</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Feature 6</h3>
+                        <p>Low Self-Discharge: ≤2% per month, maintaining sufficient power for vehicle starting even after long-term parking</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Full Technical Specifications</h2>
+                <table class="spec-table">
+                    <thead>
+                        <tr>
+                            <th>Parameter Item</th>
+                            <th>H5-12610</th>
+                            <th>H6-12660</th>
+                            <th>H7-12820</th>
+                            <th>H8-12880</th>
+                            <th>H9-121025</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Rated Voltage (V)</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td></tr>
+                        <tr><td>Power Rating (W)</td><td>610</td><td>660</td><td>820</td><td>880</td><td>1025</td></tr>
+                        <tr><td>Internal Resistance (mΩ)</td><td>≤5</td><td>≤5</td><td>≤5</td><td>≤5</td><td>≤5</td></tr>
+                        <tr><td>Cycle Life (Cycles)</td><td>≥6000</td><td>≥6000</td><td>≥6000</td><td>≥6000</td><td>≥6000</td></tr>
+                        <tr><td>CCA (A)</td><td>700</td><td>800</td><td>850</td><td>900</td><td>1000</td></tr>
+                        <tr><td>Self-Discharge Rate (%/Month)</td><td>≤2</td><td>≤2</td><td>≤2</td><td>≤2</td><td>≤2</td></tr>
+                        <tr><td>Standard Charging Current (A)</td><td>9</td><td>9</td><td>12</td><td>12</td><td>12</td></tr>
+                        <tr><td>Discharge Cut-off Voltage (V)</td><td>7.2</td><td>7.2</td><td>7.2</td><td>7.2</td><td>7.2</td></tr>
+                        <tr><td>Charging Temperature Range</td><td>0~80℃</td><td>0~80℃</td><td>0~80℃</td><td>0~80℃</td><td>0~80℃</td></tr>
+                        <tr><td>Discharging Temperature Range</td><td>-50~80℃</td><td>-50~80℃</td><td>-50~80℃</td><td>-50~80℃</td><td>-50~80℃</td></tr>
+                        <tr><td>Storage Temperature Range</td><td>0~45℃</td><td>0~45℃</td><td>0~45℃</td><td>0~45℃</td><td>0~45℃</td></tr>
+                        <tr><td>Cell Type</td><td>Sodium-ion (NFPP)</td><td>Sodium-ion (NFPP)</td><td>Sodium-ion (NFPP)</td><td>Sodium-ion (NFPP)</td><td>Sodium-ion (NFPP)</td></tr>
+                        <tr><td>Housing Material</td><td>PC+ABS</td><td>PC+ABS</td><td>PC+ABS</td><td>PC+ABS</td><td>PC+ABS</td></tr>
+                        <tr><td>Dimensions (L×W×H, mm)</td><td>242×175×190</td><td>278×175×190</td><td>315×175×190</td><td>353×175×190</td><td>378×175×190</td></tr>
+                        <tr><td>Weight (kg)</td><td>5 ±0.5</td><td>7 ±0.5</td><td>9 ±0.5</td><td>9.5 ±0.5</td><td>11.5 ±0.5</td></tr>
+                        <tr><td>Terminal Type</td><td>T2 (Thick)</td><td>T2 (Thick)</td><td>T2 (Thick)</td><td>T2 (Thick)</td><td>T2 (Thick)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
-
-        <div class="section">
-            <h2>Full Technical Specifications</h2>
-            <table class="spec-table">
-                <thead>
-                    <tr>
-                        <th>Parameter Item</th>
-                        <th>H5-12610</th><th>H6-12660</th><th>H7-12820</th><th>H8-12880</th><th>H9-121025</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    
-                    <tr>
-                        <td>Rated Voltage (V)</td>
-                        <td>12</td><td>12</td><td>12</td><td>12</td><td>12</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Power Rating (W)</td>
-                        <td>610</td><td>660</td><td>820</td><td>880</td><td>1025</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Internal Resistance (mΩ)</td>
-                        <td>≤5</td><td>≤5</td><td>≤5</td><td>≤5</td><td>≤5</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Cycle Life (Cycles)</td>
-                        <td>≥3000</td><td>≥3000</td><td>≥3000</td><td>≥3000</td><td>≥3000</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>CCA (A)</td>
-                        <td>700</td><td>800</td><td>850</td><td>900</td><td>1000</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Self-Discharge Rate (%/Month)</td>
-                        <td>≤2</td><td>≤2</td><td>≤2</td><td>≤2</td><td>≤2</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Standard Charging Current (A)</td>
-                        <td>9</td><td>9</td><td>12</td><td>12</td><td>12</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Discharge Cut-off Voltage (V)</td>
-                        <td>7.2</td><td>7.2</td><td>7.2</td><td>7.2</td><td>7.2</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Charging Temperature Range</td>
-                        <td>0~80℃</td><td>0~80℃</td><td>0~80℃</td><td>0~80℃</td><td>0~80℃</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Discharging Temperature Range</td>
-                        <td>-50~80℃</td><td>-50~80℃</td><td>-50~80℃</td><td>-50~80℃</td><td>-50~80℃</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Storage Temperature Range</td>
-                        <td>0~45℃</td><td>0~45℃</td><td>0~45℃</td><td>0~45℃</td><td>0~45℃</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Cell Type</td>
-                        <td>Sodium-ion (NFPP)</td><td>Sodium-ion (NFPP)</td><td>Sodium-ion (NFPP)</td><td>Sodium-ion (NFPP)</td><td>Sodium-ion (NFPP)</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Housing Material</td>
-                        <td>PC+ABS</td><td>PC+ABS</td><td>PC+ABS</td><td>PC+ABS</td><td>PC+ABS</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Dimensions (L×W×H, mm)</td>
-                        <td>242×175×190</td><td>278×175×190</td><td>315×175×190</td><td>353×175×190</td><td>378×175×190</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Weight (kg)</td>
-                        <td>5 ±0.5</td><td>7 ±0.5</td><td>9 ±0.5</td><td>9.5 ±0.5</td><td>11.5 ±0.5</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Terminal Type</td>
-                        <td>T2 (Thick)</td><td>T2 (Thick)</td><td>T2 (Thick)</td><td>T2 (Thick)</td><td>T2 (Thick)</td>
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </div>
-
-
+    </div>
 </section>
+
 <footer class="bg-dark text-white py-12">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -340,7 +317,7 @@
                 <div class="flex space-x-4">
                     <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-weixin"></i></a>
                     <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-linkedin"></i></a>
-                    <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify hover:bg-primary transition-colors"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa fa-twitter"></i></a>
                 </div>
             </div>
         </div>
@@ -349,5 +326,6 @@
         </div>
     </div>
 </footer>
+
 </body>
 </html>
