@@ -31,6 +31,8 @@
     </style>
 </head>
 <body class="bg-light font-sans text-dark">
+
+    <!-- Navigation -->
     <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <a href="index.html" class="text-2xl logo-font text-primary">SRPNA<span class="logo-plus">+</span></a>
@@ -44,42 +46,644 @@
         </div>
     </nav>
 
-    <section class="bg-primary pt-32 pb-16 text-white">
-        <div class="container mx-auto px-4">
+    <!-- Hero -->
+    <section class="relative bg-primary pt-32 pb-24 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-[0.08]"
+             style="background-image: radial-gradient(circle, #fff 1px, transparent 1px); background-size: 28px 28px;"></div>
+        <div class="container mx-auto px-4 relative">
+            <span class="inline-block bg-white/15 border border-white/25 text-[11px] font-semibold tracking-[0.2em] uppercase px-3 py-1 rounded-full mb-5">
+                200 kW / 200 kWh Liquid-Cooled Sodium-Ion ESS Cabinet
+            </span>
             <h1 class="text-[clamp(2rem,4vw,3rem)] logo-font mb-4">Energy Storage System (ESS)</h1>
-            <p class="text-lg opacity-90 max-w-2xl">Residential &amp; commercial sodium-ion energy storage solutions with long life, high safety, and low cost.</p>
+            <p class="text-lg opacity-90 max-w-2xl">
+                Outdoor liquid-cooled sodium-ion energy storage cabinet for commercial &amp; industrial applications.
+                Long life, high safety and integrated PCS, EMS and fire suppression.
+            </p>
+            <div class="flex flex-wrap gap-3 mt-8">
+                <a href="contact.html" class="bg-white text-primary font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition">
+                    Request a Quote
+                </a>
+                <a href="contact.html" class="border border-white/40 px-6 py-3 rounded-lg hover:bg-white/10 transition">
+                    Download Full Datasheet
+                </a>
+            </div>
         </div>
     </section>
 
+    <!-- Highlight stats -->
+    <section class="container mx-auto px-4 -mt-12 relative z-10">
+        <div class="bg-white rounded-2xl shadow-lg border border-gray-100 grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+            <div class="p-6 text-center">
+                <div class="text-xl md:text-2xl font-bold text-primary">199.68 kWh</div>
+                <div class="text-[11px] text-gray-500 mt-1 uppercase tracking-widest">Rated Energy · 1P416S</div>
+            </div>
+            <div class="p-6 text-center">
+                <div class="text-xl md:text-2xl font-bold text-primary">200 kW</div>
+                <div class="text-[11px] text-gray-500 mt-1 uppercase tracking-widest">PCS Power · 2 × 100 kW</div>
+            </div>
+            <div class="p-6 text-center">
+                <div class="text-xl md:text-2xl font-bold text-primary">1,248 V</div>
+                <div class="text-[11px] text-gray-500 mt-1 uppercase tracking-widest">Nominal · 748.8–1,435.2 V</div>
+            </div>
+            <div class="p-6 text-center">
+                <div class="text-xl md:text-2xl font-bold text-primary">&ge;6,000</div>
+                <div class="text-[11px] text-gray-500 mt-1 uppercase tracking-widest">Cycles</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key features -->
     <section class="py-20 bg-white">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <div class="grid md:grid-cols-2 gap-10">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">System Benefits</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li>&bull; Long cycle life &gt;6000 times</li>
-                        <li>&bull; High safety &amp; non-flammable</li>
-                        <li>&bull; Wide temperature operation</li>
-                        <li>&bull; Low cost &amp; high efficiency</li>
-                        <li>&bull; Solar &amp; grid compatible</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Applications</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li>&bull; Household solar storage</li>
-                        <li>&bull; Commercial &amp; industrial ESS</li>
-                        <li>&bull; Outdoor integrated cabinets</li>
-                        <li>&bull; Micro-grid &amp; peak shaving</li>
-                    </ul>
-                </div>
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mb-12">
+                <h2 class="text-3xl logo-font mb-3">System Benefits</h2>
+                <p class="text-gray-600">
+                    A fully integrated outdoor cabinet combining sodium-ion batteries, BMS, PDU, EMS,
+                    liquid cooling, aerosol fire suppression, DC/DC and PCS.
+                </p>
             </div>
-            <div class="mt-12 text-center">
-                <a href="contact.html" class="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-opacity-90">Contact Us for More Info</a>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-light rounded-2xl border border-gray-100 p-7 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                        <i class="fa fa-snowflake-o text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Liquid-Cooled Thermal Management</h3>
+                    <p class="text-sm text-gray-600">
+                        6 kW liquid cooling unit with intelligent temperature control, keeping cells in
+                        their optimal operating window and extending service life.
+                    </p>
+                </div>
+
+                <div class="bg-light rounded-2xl border border-gray-100 p-7 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                        <i class="fa fa-shield text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Multi-Level Fire Safety</h3>
+                    <p class="text-sm text-gray-600">
+                        PACK-level aerosol + cluster-level aerosol fire suppression. PACK units activate
+                        without external power, meeting GB/T 42288 pack-level requirements.
+                    </p>
+                </div>
+
+                <div class="bg-light rounded-2xl border border-gray-100 p-7 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                        <i class="fa fa-refresh text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Long Cycle Life</h3>
+                    <p class="text-sm text-gray-600">
+                        ≥6,000 cycles with sodium-ion chemistry, reducing total cost of ownership
+                        over the system lifetime.
+                    </p>
+                </div>
+
+                <div class="bg-light rounded-2xl border border-gray-100 p-7 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                        <i class="fa fa-bolt text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">High Efficiency</h3>
+                    <p class="text-sm text-gray-600">
+                        System energy conversion efficiency ≥92%. DC/DC peak efficiency ≥99%,
+                        PCS max efficiency ≥98%.
+                    </p>
+                </div>
+
+                <div class="bg-light rounded-2xl border border-gray-100 p-7 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                        <i class="fa fa-cube text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Integrated Outdoor Cabinet</h3>
+                    <p class="text-sm text-gray-600">
+                        Battery packs, PDU, EMS, liquid cooling, fire suppression, 2×PCS and 2×DC/DC
+                        integrated in one IP54 outdoor cabinet.
+                    </p>
+                </div>
+
+                <div class="bg-light rounded-2xl border border-gray-100 p-7 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                        <i class="fa fa-line-chart text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Smart EMS</h3>
+                    <p class="text-sm text-gray-600">
+                        Real-time monitoring and control, peak shaving, price arbitrage and PV integration.
+                        Supports Modbus TCP/RTU over Ethernet/RS485.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- System technical parameters -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mb-12">
+                <h2 class="text-3xl logo-font mb-3">System Technical Parameters</h2>
+                <p class="text-gray-600">200 kW / 200 kWh liquid-cooled sodium-ion ESS cabinet.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- DC parameters -->
+                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <div class="px-6 py-4 bg-primary/5 border-b border-gray-100 flex items-center">
+                        <i class="fa fa-bolt text-primary mr-3"></i>
+                        <h3 class="font-bold">DC Parameters</h3>
+                    </div>
+                    <dl class="divide-y divide-gray-100 text-sm">
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Cell Type</dt>
+                            <dd class="font-semibold text-right">NFPP-3V-160Ah</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Configuration</dt>
+                            <dd class="font-semibold text-right">1P416S</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Rated Energy</dt>
+                            <dd class="font-semibold text-right">199.68 kWh</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Nominal Voltage</dt>
+                            <dd class="font-semibold text-right">1,248 V</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Voltage Range</dt>
+                            <dd class="font-semibold text-right">748.8–1,435.2 V</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <!-- System parameters -->
+                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <div class="px-6 py-4 bg-primary/5 border-b border-gray-100 flex items-center">
+                        <i class="fa fa-cogs text-primary mr-3"></i>
+                        <h3 class="font-bold">System Parameters</h3>
+                    </div>
+                    <dl class="divide-y divide-gray-100 text-sm">
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Fire Suppression</dt>
+                            <dd class="font-semibold text-right">PACK + cluster aerosol</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Energy Conversion Efficiency</dt>
+                            <dd class="font-semibold text-right">&ge;92%</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Charge / Discharge Rate</dt>
+                            <dd class="font-semibold text-right">0.8P</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Cycle Life</dt>
+                            <dd class="font-semibold text-right">&ge;6,000 cycles</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Protection Level</dt>
+                            <dd class="font-semibold text-right">IP54</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Cooling</dt>
+                            <dd class="font-semibold text-right">Liquid-cooled</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <!-- Environment & dimensions -->
+                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <div class="px-6 py-4 bg-primary/5 border-b border-gray-100 flex items-center">
+                        <i class="fa fa-cube text-primary mr-3"></i>
+                        <h3 class="font-bold">Environment &amp; Dimensions</h3>
+                    </div>
+                    <dl class="divide-y divide-gray-100 text-sm">
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Operating Temperature</dt>
+                            <dd class="font-semibold text-right">-25°C to +55°C</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Humidity</dt>
+                            <dd class="font-semibold text-right">0–95% RH (non-condensing)</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Communication</dt>
+                            <dd class="font-semibold text-right">Ethernet / RS485</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Protocols</dt>
+                            <dd class="font-semibold text-right">Modbus TCP / Modbus RTU</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Altitude</dt>
+                            <dd class="font-semibold text-right">≤2,000 m</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Dimensions (D×W×H)</dt>
+                            <dd class="font-semibold text-right">1,650 × 1,375 × 2,450 mm</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Weight</dt>
+                            <dd class="font-semibold text-right">≈ 3,200 kg</dd>
+                        </div>
+                    </dl>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Product introduction -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mb-12">
+                <h2 class="text-3xl logo-font mb-3">Product Introduction</h2>
+                <p class="text-gray-600">
+                    Key sub-systems of the 200 kW / 200 kWh liquid-cooled ESS cabinet.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <!-- Battery pack -->
+                <div class="bg-light rounded-2xl border border-gray-100 p-8">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fa fa-battery-full text-primary mr-3"></i>Battery Pack
+                    </h3>
+                    <ul class="divide-y divide-gray-200/70 text-sm">
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Cell Type</span>
+                            <span class="font-semibold text-right">NFPP-3V-160Ah</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Configuration</span>
+                            <span class="font-semibold text-right">1P52S</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Nominal Capacity</span>
+                            <span class="font-semibold text-right">160 Ah</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Nominal Energy</span>
+                            <span class="font-semibold text-right">24.96 kWh</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Nominal Voltage</span>
+                            <span class="font-semibold text-right">126 V</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Voltage Range</span>
+                            <span class="font-semibold text-right">93.6–179.4 V</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Charge / Discharge Rate</span>
+                            <span class="font-semibold text-right">≤0.8P</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Cooling</span>
+                            <span class="font-semibold text-right">Intelligent liquid cooling</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Operating Temperature</span>
+                            <span class="font-semibold text-right">-40~55°C discharge / 0~55°C charge</span>
+                        </li>
+                    </ul>
+                    <p class="text-xs text-gray-500 mt-5">
+                        8 battery packs per cabinet. Interfaces: positive/negative sockets, M32 explosion-proof
+                        pressure relief valve, BMS communication, Φ14 liquid inlet/outlet.
+                    </p>
+                </div>
+
+                <!-- PDU -->
+                <div class="bg-light rounded-2xl border border-gray-100 p-8">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fa fa-server text-primary mr-3"></i>High-Voltage Box (PDU)
+                    </h3>
+                    <ul class="divide-y divide-gray-200/70 text-sm">
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Quantity</span>
+                            <span class="font-semibold text-right">2 per cabinet</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Max Voltage</span>
+                            <span class="font-semibold text-right">1,500 V</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Rated Current</span>
+                            <span class="font-semibold text-right">250 A</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Auxiliary Supply</span>
+                            <span class="font-semibold text-right">220 V AC</span>
+                        </li>
+                    </ul>
+                    <p class="text-xs text-gray-500 mt-5">
+                        Main circuit break control, coordinated with BMU for safe charge/discharge management.
+                        Includes breaker, fuse, contactor and main BCU.
+                    </p>
+                </div>
+
+                <!-- Liquid cooling -->
+                <div class="bg-light rounded-2xl border border-gray-100 p-8">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fa fa-snowflake-o text-primary mr-3"></i>Liquid Cooling Unit
+                    </h3>
+                    <ul class="divide-y divide-gray-200/70 text-sm">
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Cooling Capacity</span>
+                            <span class="font-semibold text-right">6 kW</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Flow Rate</span>
+                            <span class="font-semibold text-right">50 L/min</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Supply Pressure</span>
+                            <span class="font-semibold text-right">90 kPa</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Supply Temperature</span>
+                            <span class="font-semibold text-right">18°C @ 45°C / RH50%</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Rated Cooling Input</span>
+                            <span class="font-semibold text-right">3.8 kW</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">COP</span>
+                            <span class="font-semibold text-right">2.1</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Protection</span>
+                            <span class="font-semibold text-right">IP54 (electrical box IP56)</span>
+                        </li>
+                    </ul>
+                    <p class="text-xs text-gray-500 mt-5">
+                        Refrigerant R410A, heating capacity 2 kW, noise ≤75 dB(A), service life &gt;10 years.
+                    </p>
+                </div>
+
+                <!-- Fire suppression -->
+                <div class="bg-light rounded-2xl border border-gray-100 p-8">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fa fa-fire-extinguisher text-primary mr-3"></i>Fire Suppression
+                    </h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li><strong>PACK-level:</strong> one aerosol unit per pack, self-detecting and self-activating without external power.</li>
+                        <li><strong>Cluster-level:</strong> aerosol system triggered by smoke/heat detectors, with EMS indicator notification.</li>
+                        <li><strong>Compliance:</strong> meets GB/T 42288 pack-level fire protection requirements.</li>
+                    </ul>
+                </div>
+
+                <!-- EMS -->
+                <div class="bg-light rounded-2xl border border-gray-100 p-8">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fa fa-line-chart text-primary mr-3"></i>Energy Management System (EMS)
+                    </h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li>&bull; Coordinates PCS for power tracking and response.</li>
+                        <li>&bull; Real-time data acquisition: analog, digital and communication data.</li>
+                        <li>&bull; Peak shaving, price arbitrage and PV integration.</li>
+                        <li>&bull; Ethernet / RS485, Modbus TCP / Modbus RTU.</li>
+                        <li>&bull; Fanless, hard-disk-free industrial controller inside the cabinet.</li>
+                    </ul>
+                </div>
+
+                <!-- DC/DC -->
+                <div class="bg-light rounded-2xl border border-gray-100 p-8">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fa fa-exchange text-primary mr-3"></i>DC/DC Converter
+                    </h3>
+                    <ul class="divide-y divide-gray-200/70 text-sm">
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Quantity / Power</span>
+                            <span class="font-semibold text-right">2 × 100 kW</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Peak Power</span>
+                            <span class="font-semibold text-right">110 kW (10 min)</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Max Efficiency</span>
+                            <span class="font-semibold text-right">&ge;99%</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Charge/Discharge Transition</span>
+                            <span class="font-semibold text-right">&lt;20 ms</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">MPPT</span>
+                            <span class="font-semibold text-right">1 channel</span>
+                        </li>
+                    </ul>
+                    <p class="text-xs text-gray-500 mt-5">
+                        Bidirectional, wide input/output range, parallel-capable, CAN communication.
+                    </p>
+                </div>
+
+                <!-- PCS -->
+                <div class="bg-light rounded-2xl border border-gray-100 p-8 md:col-span-2">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fa fa-plug text-primary mr-3"></i>PCS Inverter
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-x-10 gap-y-1 text-sm">
+                        <ul class="divide-y divide-gray-200/70">
+                            <li class="flex justify-between gap-4 py-2.5">
+                                <span class="text-gray-600">Quantity / Rated Power</span>
+                                <span class="font-semibold text-right">2 × 100 kW</span>
+                            </li>
+                            <li class="flex justify-between gap-4 py-2.5">
+                                <span class="text-gray-600">DC Voltage (Full Load)</span>
+                                <span class="font-semibold text-right">630–900 V</span>
+                            </li>
+                            <li class="flex justify-between gap-4 py-2.5">
+                                <span class="text-gray-600">AC Output</span>
+                                <span class="font-semibold text-right">400 V / 50 Hz</span>
+                            </li>
+                            <li class="flex justify-between gap-4 py-2.5">
+                                <span class="text-gray-600">Rated Output Current</span>
+                                <span class="font-semibold text-right">145 A</span>
+                            </li>
+                            <li class="flex justify-between gap-4 py-2.5">
+                                <span class="text-gray-600">AC Connection</span>
+                                <span class="font-semibold text-right">Three-phase four-wire</span>
+                            </li>
+                        </ul>
+                        <ul class="divide-y divide-gray-200/70">
+                            <li class="flex justify-between gap-4 py-2.5">
+                                <span class="text-gray-600">Grid Voltage / Frequency</span>
+                                <span class="font-semibold text-right">340–460 V / 50–60 Hz</span>
+                            </li>
+                            <li class="flex justify-between gap-4 py-2.5">
+                                <span class="text-gray-600">THDi</span>
+                                <span class="font-semibold text-right">≤3% (full load)</span>
+                            </li>
+                            <li class="flex justify-between gap-4 py-2.5">
+                                <span class="text-gray-600">Power Factor</span>
+                                <span class="font-semibold text-right">-0.99~+0.99</span>
+                            </li>
+                            <li class="flex justify-between gap-4 py-2.5">
+                                <span class="text-gray-600">Max Efficiency</span>
+                                <span class="font-semibold text-right">&ge;98%</span>
+                            </li>
+                            <li class="flex justify-between gap-4 py-2.5">
+                                <span class="text-gray-600">Protection / Cooling</span>
+                                <span class="font-semibold text-right">IP20 / forced air</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mb-12">
+                <h2 class="text-3xl logo-font mb-3">Applications</h2>
+                <p class="text-gray-600">
+                    Designed for commercial and industrial energy storage scenarios requiring safety,
+                    long life and flexible energy management.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl border border-gray-100 p-7 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                        <i class="fa fa-industry text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Commercial &amp; Industrial ESS</h3>
+                    <p class="text-sm text-gray-600">
+                        Peak shaving and demand charge management for factories, commercial buildings and parks.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-gray-100 p-7 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                        <i class="fa fa-sun-o text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">PV + Storage</h3>
+                    <p class="text-sm text-gray-600">
+                        Store excess solar energy and discharge during peak periods to improve self-consumption.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-gray-100 p-7 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                        <i class="fa fa-battery-full text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Micro-Grid &amp; Backup</h3>
+                    <p class="text-sm text-gray-600">
+                        Reliable backup power and micro-grid support with integrated PCS and EMS.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-gray-100 p-7 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                        <i class="fa fa-exchange text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Price Arbitrage</h3>
+                    <p class="text-sm text-gray-600">
+                        Charge during low-price periods and discharge during high-price periods to reduce energy costs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standards, safety, packaging -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-6">
+
+                <!-- Standards -->
+                <div class="bg-light rounded-2xl border border-gray-100 p-8">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fa fa-certificate text-primary mr-3"></i>Standards &amp; Compliance
+                    </h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li>&bull; IEC 62619-2022 &mdash; Industrial battery safety</li>
+                        <li>&bull; IEC 63056-2020 &mdash; Secondary sodium battery safety</li>
+                        <li>&bull; IEC 62477-1 &mdash; Power electronic converter systems safety</li>
+                        <li>&bull; GB/T 44265-2024 &mdash; Sodium-ion battery technical specification</li>
+                        <li>&bull; GB/T 34131-2023 &mdash; BMS for electric energy storage</li>
+                        <li>&bull; GB/T 34120-2023 &mdash; PCS technical specification</li>
+                        <li>&bull; GB/T 36547-2018 &mdash; Grid connection of electrochemical storage</li>
+                        <li>&bull; GB 4208-2008 &mdash; Enclosure protection (IP code)</li>
+                        <li>&bull; UN38.3 &mdash; Transport safety</li>
+                        <li>&bull; CE-EMC &mdash; Electromagnetic compatibility</li>
+                    </ul>
+                </div>
+
+                <!-- Packaging, transport, storage -->
+                <div class="bg-light rounded-2xl border border-gray-100 p-8">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fa fa-truck text-primary mr-3"></i>Packaging, Transport &amp; Storage
+                    </h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li>&bull; <strong>Packaging:</strong> Whole cabinet on wooden pallet, wrapped with EPE foam, packed in wooden case.</li>
+                        <li>&bull; <strong>Transport SOC:</strong> 30%, all power circuits disconnected.</li>
+                        <li>&bull; <strong>Transport standard:</strong> UN3536 compliant.</li>
+                        <li>&bull; <strong>Handling:</strong> Avoid inversion, severe vibration, impact and extrusion.</li>
+                        <li>&bull; <strong>Storage:</strong> Follow manufacturer recommendation; keep SOC within the specified range for long-term storage.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Safety usage guide -->
+            <div class="mt-8 bg-amber-50 border border-amber-200 rounded-2xl p-8">
+                <h3 class="text-lg font-bold mb-4 flex items-center text-amber-900">
+                    <i class="fa fa-exclamation-triangle mr-3 text-amber-500"></i>Safety Usage Guide
+                </h3>
+                <div class="grid md:grid-cols-2 gap-x-10 gap-y-3 text-sm text-amber-900/80">
+                    <p>&bull; Do not disassemble, crush, incinerate or heat the battery.</p>
+                    <p>&bull; Use batteries from the same manufacturer; do not mix different brands or models.</p>
+                    <p>&bull; Do not immerse the battery in water or allow it to get wet.</p>
+                    <p>&bull; Do not short-circuit, overcharge or over-discharge the battery.</p>
+                    <p>&bull; Do not install or store near heat sources or open flames.</p>
+                    <p>&bull; Do not puncture, impact, throw or step on the battery.</p>
+                    <p>&bull; Stop using the battery immediately if it emits odor, heats up, deforms or shows any abnormality.</p>
+                    <p>&bull; In case of fire, cut off high/low voltage circuits and use dry powder, sand or sufficient water to extinguish.</p>
+                </div>
+            </div>
+
+            <!-- Warranty -->
+            <div class="mt-6 bg-light rounded-2xl border border-gray-100 p-8">
+                <h3 class="text-xl font-bold mb-4 flex items-center">
+                    <i class="fa fa-file-text-o text-primary mr-3"></i>Warranty Statement
+                </h3>
+                <p class="text-sm text-gray-600 max-w-4xl">
+                    The warranty period is defined by the commercial contract. Unauthorized disassembly,
+                    modification, mixing with other battery products, or operation outside the specified
+                    performance boundaries will void warranty coverage. SRPNA+ is not liable for issues
+                    caused by non-authorized operation or improper use.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-primary py-16 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl logo-font mb-4">Need a Customized Energy Storage Solution?</h2>
+            <p class="opacity-90 max-w-2xl mx-auto mb-8">
+                Contact SRPNA+ today to discuss your commercial &amp; industrial energy storage requirements.
+                We provide technical support, system configuration and customized quotations.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="contact.html" class="bg-white text-primary font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition">
+                    Contact Us for More Info
+                </a>
+                <a href="contact.html" class="border border-white/50 px-8 py-3 rounded-lg hover:bg-white/10 transition">
+                    Get a Customized Quote
+                </a>
+            </div>
+            <p class="text-xs opacity-60 mt-8">
+                200 kW / 200 kWh Liquid-Cooled Sodium-Ion ESS Cabinet · IP54 · PACK + Cluster Aerosol Fire Suppression
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="bg-dark text-white py-12">
         <div class="container mx-auto px-4">
             <div class="text-center text-gray-400">
@@ -87,5 +691,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>
