@@ -31,6 +31,8 @@
     </style>
 </head>
 <body class="bg-light font-sans text-dark">
+
+    <!-- Navigation -->
     <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <a href="index.html" class="text-2xl logo-font text-primary">SRPNA<span class="logo-plus">+</span></a>
@@ -44,42 +46,594 @@
         </div>
     </nav>
 
-    <section class="bg-primary pt-32 pb-16 text-white">
-        <div class="container mx-auto px-4">
+    <!-- Hero -->
+    <section class="relative bg-primary pt-32 pb-24 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-[0.08]"
+             style="background-image: radial-gradient(circle, #fff 1px, transparent 1px); background-size: 28px 28px;"></div>
+        <div class="container mx-auto px-4 relative">
+            <span class="inline-block bg-white/15 border border-white/25 text-[11px] font-semibold tracking-[0.2em] uppercase px-3 py-1 rounded-full mb-5">
+                Model SRPNA24-160
+            </span>
             <h1 class="text-[clamp(2rem,4vw,3rem)] logo-font mb-4">Heavy-Duty Truck Battery</h1>
-            <p class="text-lg opacity-90 max-w-2xl">24V high-performance sodium-ion battery for heavy-duty trucks, engineering vehicles, and long-haul transport.</p>
+            <p class="text-lg opacity-90 max-w-2xl">
+                24V high-performance sodium-ion battery for heavy-duty trucks, engineering vehicles,
+                and long-haul transport. Unleash extreme durability and safety.
+            </p>
+            <div class="flex flex-wrap gap-3 mt-8">
+                <a href="contact.html" class="bg-white text-primary font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition">
+                    Request a Sample
+                </a>
+                <a href="contact.html" class="border border-white/40 px-6 py-3 rounded-lg hover:bg-white/10 transition">
+                    Talk to Our Engineers
+                </a>
+            </div>
         </div>
     </section>
 
+    <!-- Highlight stats -->
+    <section class="container mx-auto px-4 -mt-12 relative z-10">
+        <div class="bg-white rounded-2xl shadow-lg border border-gray-100 grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+            <div class="p-6 text-center">
+                <div class="text-xl md:text-2xl font-bold text-primary">22.9V / 160Ah</div>
+                <div class="text-[11px] text-gray-500 mt-1 uppercase tracking-widest">Nominal · 3,664 Wh</div>
+            </div>
+            <div class="p-6 text-center">
+                <div class="text-xl md:text-2xl font-bold text-primary">1,800 A</div>
+                <div class="text-[11px] text-gray-500 mt-1 uppercase tracking-widest">Cold Cranking Amps</div>
+            </div>
+            <div class="p-6 text-center">
+                <div class="text-xl md:text-2xl font-bold text-primary">-40&deg;C ~ 60&deg;C</div>
+                <div class="text-[11px] text-gray-500 mt-1 uppercase tracking-widest">Operating Range</div>
+            </div>
+            <div class="p-6 text-center">
+                <div class="text-xl md:text-2xl font-bold text-primary">6,000+</div>
+                <div class="text-[11px] text-gray-500 mt-1 uppercase tracking-widest">Cycles @ 100% DOD</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key advantages -->
     <section class="py-20 bg-white">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <div class="grid md:grid-cols-2 gap-10">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mb-12">
+                <h2 class="text-3xl logo-font mb-3">Why SRPNA24-160</h2>
+                <p class="text-gray-600">
+                    A sodium-ion platform purpose-built for the harshest duty cycles &mdash; cold starts,
+                    long parking periods, vibration and continuous high-current loads.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-light rounded-2xl border border-gray-100 p-7 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                        <i class="fa fa-refresh text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Extreme Longevity &amp; Value</h3>
+                    <p class="text-sm text-gray-600">
+                        6,000+ cycles at 100% DOD with a projected calendar life of 20+ years.
+                        &ge;95% charge/discharge efficiency drastically lowers total cost of ownership.
+                    </p>
+                </div>
+
+                <div class="bg-light rounded-2xl border border-gray-100 p-7 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                        <i class="fa fa-snowflake-o text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">All-Weather Reliability</h3>
+                    <p class="text-sm text-gray-600">
+                        Operates flawlessly from -40&deg;C to 60&deg;C. Retains &ge;85% capacity at -40&deg;C
+                        for reliable cold starts in extreme winter conditions.
+                    </p>
+                </div>
+
+                <div class="bg-light rounded-2xl border border-gray-100 p-7 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                        <i class="fa fa-shield text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Military-Grade Safety</h3>
+                    <p class="text-sm text-gray-600">
+                        Certified to UL1642 and IEC62133. Passed nail penetration, crush, overcharge and
+                        short-circuit tests with no fire, no explosion.
+                    </p>
+                </div>
+
+                <div class="bg-light rounded-2xl border border-gray-100 p-7 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                        <i class="fa fa-microchip text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Smart BMS</h3>
+                    <p class="text-sm text-gray-600">
+                        Active balancing (1&ndash;2A), CAN / Bluetooth / RS485 connectivity,
+                        &plusmn;2% SOC estimation and fault-history data logging.
+                    </p>
+                </div>
+
+                <div class="bg-light rounded-2xl border border-gray-100 p-7 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                        <i class="fa fa-tint text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">IP65 Sealed Housing</h3>
+                    <p class="text-sm text-gray-600">
+                        Dust-tight and waterproof enclosure keeps the pack reliable in mud, rain,
+                        dust and other harsh outdoor environments.
+                    </p>
+                </div>
+
+                <div class="bg-light rounded-2xl border border-gray-100 p-7 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                        <i class="fa fa-leaf text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Lightweight &amp; Eco-Friendly</h3>
+                    <p class="text-sm text-gray-600">
+                        About 40% lighter than equivalent lead-acid batteries. Free of heavy-metal
+                        pollution, compliant with RoHS and REACH.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical specifications -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mb-12">
+                <h2 class="text-3xl logo-font mb-3">Technical Specifications</h2>
+                <p class="text-gray-600">Model SRPNA24-160 &mdash; high-performance sodium-ion pack.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Electrical -->
+                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <div class="px-6 py-4 bg-primary/5 border-b border-gray-100 flex items-center">
+                        <i class="fa fa-bolt text-primary mr-3"></i>
+                        <h3 class="font-bold">Electrical Parameters</h3>
+                    </div>
+                    <dl class="divide-y divide-gray-100 text-sm">
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Model</dt>
+                            <dd class="font-semibold text-right">SRPNA24-160</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Nominal Voltage</dt>
+                            <dd class="font-semibold text-right">22.9 V</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Rated Capacity</dt>
+                            <dd class="font-semibold text-right">160 Ah @0.5C, 25&deg;C</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Energy</dt>
+                            <dd class="font-semibold text-right">3,664 Wh</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Charge Cut-off</dt>
+                            <dd class="font-semibold text-right">29.2 V</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Discharge Cut-off</dt>
+                            <dd class="font-semibold text-right">14.0 V <span class="font-normal text-gray-400">(configurable)</span></dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Internal Resistance</dt>
+                            <dd class="font-semibold text-right">&lt;10 m&Omega; @1kHz</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Self-Discharge</dt>
+                            <dd class="font-semibold text-right">&le;2% / month</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <!-- Performance -->
+                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <div class="px-6 py-4 bg-primary/5 border-b border-gray-100 flex items-center">
+                        <i class="fa fa-tachometer text-primary mr-3"></i>
+                        <h3 class="font-bold">Performance</h3>
+                    </div>
+                    <dl class="divide-y divide-gray-100 text-sm">
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Rated Charge Current</dt>
+                            <dd class="font-semibold text-right">80 A (0.5C)</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Max Charge Current</dt>
+                            <dd class="font-semibold text-right">160 A (1C) peak</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Rated Discharge Current</dt>
+                            <dd class="font-semibold text-right">80 A (0.5C)</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Max Discharge Current</dt>
+                            <dd class="font-semibold text-right">160 A (1C) peak</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">CCA</dt>
+                            <dd class="font-semibold text-right">1,800 A</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Charging Efficiency</dt>
+                            <dd class="font-semibold text-right">&ge;95%</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Cycle Life</dt>
+                            <dd class="font-semibold text-right">&ge;6,000 cycles</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Calendar Life</dt>
+                            <dd class="font-semibold text-right">&ge;20 years</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <!-- Physical & Environmental -->
+                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <div class="px-6 py-4 bg-primary/5 border-b border-gray-100 flex items-center">
+                        <i class="fa fa-cube text-primary mr-3"></i>
+                        <h3 class="font-bold">Physical &amp; Environmental</h3>
+                    </div>
+                    <dl class="divide-y divide-gray-100 text-sm">
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Dimensions (L&times;W&times;H)</dt>
+                            <dd class="font-semibold text-right">640 &times; 245 &times; 210 mm</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Weight</dt>
+                            <dd class="font-semibold text-right">&asymp; 42.0 kg</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Protection Level</dt>
+                            <dd class="font-semibold text-right">IP65</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Operating (Discharge)</dt>
+                            <dd class="font-semibold text-right">-40&deg;C to 60&deg;C</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Operating (Charge)</dt>
+                            <dd class="font-semibold text-right">0&deg;C to 60&deg;C</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Storage</dt>
+                            <dd class="font-semibold text-right">0&deg;C to 35&deg;C</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Storage SOC</dt>
+                            <dd class="font-semibold text-right">Recommended 50%</dd>
+                        </div>
+                        <div class="flex justify-between gap-4 px-6 py-3">
+                            <dt class="text-gray-500">Housing</dt>
+                            <dd class="font-semibold text-right">Dustproof &amp; waterproof</dd>
+                        </div>
+                    </dl>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Temperature performance -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Key Advantages</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li>&bull; 24V high-voltage platform</li>
-                        <li>&bull; -40&deg;C reliable cold start</li>
-                        <li>&bull; 10,000+ long cycle life</li>
-                        <li>&bull; Ultra-high shock resistance</li>
+                    <h2 class="text-3xl logo-font mb-4">Capacity Retention Across Temperatures</h2>
+                    <p class="text-gray-600 mb-6">
+                        Verified discharge capacity relative to 25&deg;C rated capacity. The sodium-ion
+                        chemistry keeps working where lead-acid and lithium packs give up &mdash;
+                        from arctic winters to engine-bay heat.
+                    </p>
+                    <p class="text-sm text-gray-500">
+                        Storage at 60&deg;C for 30 days retains &ge;95% capacity.
+                    </p>
+                </div>
+
+                <div class="bg-light rounded-2xl border border-gray-100 p-8 space-y-6">
+                    <div>
+                        <div class="flex justify-between text-sm mb-2">
+                            <span class="text-gray-600">-40&deg;C Discharge</span>
+                            <span class="font-semibold text-primary">&ge;85%</span>
+                        </div>
+                        <div class="h-2.5 bg-gray-200/70 rounded-full overflow-hidden">
+                            <div class="h-full bg-primary rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm mb-2">
+                            <span class="text-gray-600">-20&deg;C Discharge</span>
+                            <span class="font-semibold text-primary">&ge;95%</span>
+                        </div>
+                        <div class="h-2.5 bg-gray-200/70 rounded-full overflow-hidden">
+                            <div class="h-full bg-primary rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm mb-2">
+                            <span class="text-gray-600">25&deg;C Discharge (reference)</span>
+                            <span class="font-semibold text-primary">100%</span>
+                        </div>
+                        <div class="h-2.5 bg-gray-200/70 rounded-full overflow-hidden">
+                            <div class="h-full bg-primary rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm mb-2">
+                            <span class="text-gray-600">55&deg;C Discharge</span>
+                            <span class="font-semibold text-primary">&ge;98%</span>
+                        </div>
+                        <div class="h-2.5 bg-gray-200/70 rounded-full overflow-hidden">
+                            <div class="h-full bg-primary rounded-full" style="width: 98%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm mb-2">
+                            <span class="text-gray-600">60&deg;C Storage (30 days)</span>
+                            <span class="font-semibold text-primary">&ge;95%</span>
+                        </div>
+                        <div class="h-2.5 bg-gray-200/70 rounded-full overflow-hidden">
+                            <div class="h-full bg-primary rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BMS -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mb-12">
+                <h2 class="text-3xl logo-font mb-3">BMS System Features</h2>
+                <p class="text-gray-600">
+                    An intelligent battery management system protects the pack, reports its state,
+                    and keeps every cell in balance over the full service life.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-6">
+
+                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-8">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fa fa-shield text-primary mr-3"></i>Core Protection Functions
+                    </h3>
+                    <ul class="divide-y divide-gray-100 text-sm">
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Overcharge Protection</span>
+                            <span class="font-semibold text-right">Cell &ge;3.9 V · &lt;100 ms</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Overdischarge Protection</span>
+                            <span class="font-semibold text-right">Cell &le;2.0 V · &lt;100 ms</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Charge Overcurrent</span>
+                            <span class="font-semibold text-right">&ge;2C · &lt;50 ms</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Discharge Overcurrent</span>
+                            <span class="font-semibold text-right">&ge;40C · &lt;10 ms</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Temperature Protection</span>
+                            <span class="font-semibold text-right">High / low temp</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-8">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fa fa-microchip text-primary mr-3"></i>Intelligent Management
+                    </h3>
+                    <ul class="divide-y divide-gray-100 text-sm">
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">SOC Estimation Accuracy</span>
+                            <span class="font-semibold text-right">&plusmn;2% (EKF)</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">SOH Estimation</span>
+                            <span class="font-semibold text-right">Cycle + resistance</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Active Balancing</span>
+                            <span class="font-semibold text-right">1&ndash;2 A</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Communication</span>
+                            <span class="font-semibold text-right">CAN / Bluetooth / RS485</span>
+                        </li>
+                        <li class="flex justify-between gap-4 py-3">
+                            <span class="text-gray-600">Data Logging</span>
+                            <span class="font-semibold text-right">Fault history storage</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mb-12">
+                <h2 class="text-3xl logo-font mb-3">Applications</h2>
+                <p class="text-gray-600">
+                    The SRPNA24-160 is designed for high-power industrial and transportation sectors.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-light rounded-2xl border border-gray-100 p-8">
+                    <h3 class="text-lg font-bold mb-4 flex items-center">
+                        <i class="fa fa-truck text-primary mr-3"></i>Heavy-Duty Commercial Vehicles
+                    </h3>
+                    <ul class="space-y-2 text-gray-700 text-sm">
+                        <li>&bull; Reliable starting power for heavy trucks</li>
+                        <li>&bull; Mining and construction equipment</li>
+                        <li>&bull; Agricultural machinery</li>
                         <li>&bull; Long-term parking power supply</li>
                     </ul>
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Applications</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li>&bull; Heavy-duty trucks</li>
-                        <li>&bull; Engineering machinery</li>
-                        <li>&bull; Commercial vehicles</li>
-                        <li>&bull; Long-haul transportation</li>
+
+                <div class="bg-light rounded-2xl border border-gray-100 p-8">
+                    <h3 class="text-lg font-bold mb-4 flex items-center">
+                        <i class="fa fa-ship text-primary mr-3"></i>Marine &amp; RV
+                    </h3>
+                    <ul class="space-y-2 text-gray-700 text-sm">
+                        <li>&bull; Durable energy storage for yachts</li>
+                        <li>&bull; Recreational vehicles</li>
+                        <li>&bull; Marine propulsion systems</li>
                     </ul>
                 </div>
-            </div>
-            <div class="mt-12 text-center">
-                <a href="contact.html" class="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-opacity-90">Contact Us for More Info</a>
+
+                <div class="bg-light rounded-2xl border border-gray-100 p-8">
+                    <h3 class="text-lg font-bold mb-4 flex items-center">
+                        <i class="fa fa-industry text-primary mr-3"></i>Industrial Generators
+                    </h3>
+                    <ul class="space-y-2 text-gray-700 text-sm">
+                        <li>&bull; Backup power for high-power diesel generators</li>
+                        <li>&bull; Remote location power supply</li>
+                        <li>&bull; Emergency power systems</li>
+                    </ul>
+                </div>
+
+                <div class="bg-light rounded-2xl border border-gray-100 p-8">
+                    <h3 class="text-lg font-bold mb-4 flex items-center">
+                        <i class="fa fa-signal text-primary mr-3"></i>Off-Grid Systems
+                    </h3>
+                    <ul class="space-y-2 text-gray-700 text-sm">
+                        <li>&bull; Telecom towers</li>
+                        <li>&bull; Off-grid energy storage</li>
+                        <li>&bull; Extreme climate applications</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Safety & certifications -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-6">
+
+                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-8">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fa fa-check-circle text-primary mr-3"></i>Safety Tests
+                    </h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li class="flex gap-3"><i class="fa fa-check text-primary mt-1"></i><span><strong>Nail Penetration</strong> &mdash; UL1642 compliant, passed without fire or explosion</span></li>
+                        <li class="flex gap-3"><i class="fa fa-check text-primary mt-1"></i><span><strong>Crush Test</strong> &mdash; IEC62133 compliant, passed without fire or explosion</span></li>
+                        <li class="flex gap-3"><i class="fa fa-check text-primary mt-1"></i><span><strong>Overcharge Test</strong> &mdash; UN38.3 compliant, passed without fire or explosion</span></li>
+                        <li class="flex gap-3"><i class="fa fa-check text-primary mt-1"></i><span><strong>Short Circuit Test</strong> &mdash; passed without fire or explosion</span></li>
+                        <li class="flex gap-3"><i class="fa fa-check text-primary mt-1"></i><span><strong>Drop Test</strong> &mdash; passed with structural integrity</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-8">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fa fa-certificate text-primary mr-3"></i>Certifications
+                    </h3>
+                    <div class="grid sm:grid-cols-2 gap-4 text-sm">
+                        <div class="bg-light rounded-xl p-4">
+                            <div class="text-[11px] uppercase tracking-widest text-gray-500 mb-1">Transportation</div>
+                            <div class="font-semibold">UN38.3 · UN3480 · CLASS 9</div>
+                        </div>
+                        <div class="bg-light rounded-xl p-4">
+                            <div class="text-[11px] uppercase tracking-widest text-gray-500 mb-1">Safety</div>
+                            <div class="font-semibold">IEC 62619 · UL 1973 (BMS)</div>
+                        </div>
+                        <div class="bg-light rounded-xl p-4">
+                            <div class="text-[11px] uppercase tracking-widest text-gray-500 mb-1">Environmental</div>
+                            <div class="font-semibold">RoHS · REACH</div>
+                        </div>
+                        <div class="bg-light rounded-xl p-4">
+                            <div class="text-[11px] uppercase tracking-widest text-gray-500 mb-1">Cell Safety</div>
+                            <div class="font-semibold">UL1642 · IEC62133</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Warranty & service -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mb-12">
+                <h2 class="text-3xl logo-font mb-3">Quality Assurance</h2>
+                <p class="text-gray-600">
+                    A 5-year limited warranty backed by a 7&times;24 technical team and a 10-year
+                    spare parts guarantee.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-light rounded-2xl border border-gray-100 p-6 text-center">
+                    <i class="fa fa-clock-o text-2xl text-primary mb-3"></i>
+                    <div class="font-bold mb-1">5-Year Limited Warranty</div>
+                    <p class="text-xs text-gray-600">Covers material and workmanship defects</p>
+                </div>
+                <div class="bg-light rounded-2xl border border-gray-100 p-6 text-center">
+                    <i class="fa fa-headphones text-2xl text-primary mb-3"></i>
+                    <div class="font-bold mb-1">7&times;24 Technical Support</div>
+                    <p class="text-xs text-gray-600">Online service, any time zone</p>
+                </div>
+                <div class="bg-light rounded-2xl border border-gray-100 p-6 text-center">
+                    <i class="fa fa-wrench text-2xl text-primary mb-3"></i>
+                    <div class="font-bold mb-1">Professional Repair Team</div>
+                    <p class="text-xs text-gray-600">Nationwide on-site support</p>
+                </div>
+                <div class="bg-light rounded-2xl border border-gray-100 p-6 text-center">
+                    <i class="fa fa-cubes text-2xl text-primary mb-3"></i>
+                    <div class="font-bold mb-1">10-Year Spare Parts</div>
+                    <p class="text-xs text-gray-600">Long-term parts availability guarantee</p>
+                </div>
+            </div>
+
+            <!-- Safety warnings -->
+            <div class="mt-12 bg-amber-50 border border-amber-200 rounded-2xl p-8">
+                <h3 class="text-lg font-bold mb-4 flex items-center text-amber-900">
+                    <i class="fa fa-exclamation-triangle mr-3 text-amber-500"></i>Safety Warnings &amp; Precautions
+                </h3>
+                <div class="grid md:grid-cols-2 gap-x-10 gap-y-3 text-sm text-amber-900/80">
+                    <p>&bull; <strong>Prohibit short circuit</strong> &mdash; never bridge the positive and negative poles.</p>
+                    <p>&bull; <strong>Prohibit disassembly</strong> &mdash; non-professionals must not open the pack.</p>
+                    <p>&bull; <strong>Fire prevention</strong> &mdash; install on a fireproof surface, away from flammable materials.</p>
+                    <p>&bull; <strong>Protective measures</strong> &mdash; wear insulated gloves and goggles during operation.</p>
+                    <p>&bull; <strong>Charging</strong> &mdash; must use the matching charger.</p>
+                    <p>&bull; <strong>Temperature</strong> &mdash; strictly comply with the operating temperature range.</p>
+                    <p>&bull; <strong>Maintenance</strong> &mdash; inspect and service regularly as required.</p>
+                    <p>&bull; <strong>Environment</strong> &mdash; avoid installation in humid or dusty locations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-primary py-16 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl logo-font mb-4">Ready to Upgrade Your Energy Storage?</h2>
+            <p class="opacity-90 max-w-2xl mx-auto mb-8">
+                Contact SRPNA+ today to request a sample, download the full datasheet,
+                speak with our technical team, or get a customized quote.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="contact.html" class="bg-white text-primary font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition">
+                    Contact Us for More Info
+                </a>
+                <a href="contact.html" class="border border-white/50 px-8 py-3 rounded-lg hover:bg-white/10 transition">
+                    Get a Customized Quote
+                </a>
+            </div>
+            <p class="text-xs opacity-60 mt-8">Product Model: SRPNA24-160 &nbsp;·&nbsp; Release Date: December 2024</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="bg-dark text-white py-12">
         <div class="container mx-auto px-4">
             <div class="text-center text-gray-400">
@@ -87,5 +641,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>
